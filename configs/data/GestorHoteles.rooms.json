@@ -1,0 +1,93 @@
+[{
+  "_id": {
+    "$oid": "68181e451e41e1ea6641eea2"
+  },
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion mas exclusiva del hotel con servicio 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
+  "datesAvialableRoom": [
+    {
+      "date": {
+        "$date": "2025-05-05T00:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6818e48d670d3025fbb4214e"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-06T00:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6818e4cd8712c0ea5e9cd8bc"
+      }
+    }
+  ],
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-05T02:11:18.008Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-05T16:32:09.235Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6818ea80523988f192af2abb"
+  },
+  "typeRoom": "Habitacion familiar",
+  "descriptionRoom": "Habitacion para familias numerosas, con servicio a cuarto",
+  "capacityRoom": 10,
+  "priceRoom": 700,
+  "datesAvialableRoom": [
+    {
+      "date": {
+        "$date": "2025-04-05T06:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6818ea80523988f192af2abc"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-05T00:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6818eab9523988f192af2ad3"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-06T00:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6818eabd523988f192af2ad8"
+      }
+    }
+  ],
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-05T16:42:40.589Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-05T16:43:41.209Z"
+  }
+}]

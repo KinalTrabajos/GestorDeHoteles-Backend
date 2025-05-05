@@ -1,0 +1,582 @@
+{
+	"info": {
+		"_postman_id": "0f42ecd5-31b3-4714-ad1c-97e449584d38",
+		"name": "GestoDeHoteles",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37413968"
+	},
+	"item": [
+		{
+			"name": "Users",
+			"item": [
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"crosasss\",\r\n    \"password\": \"11111111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Cristian\",\r\n    \"surname\": \"Rosas\",\r\n    \"username\": \"crosas\",\r\n    \"email\": \"crosas@gmail.com\",\r\n    \"password\": \"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewUsers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/users/usersView",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"users",
+								"usersView"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateUsers",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDYzODUzNzcsImV4cCI6MTc0NjM4ODk3N30.ZEuci1751lBtcyM2I0fB2TEGxYfmtpakY0wHrhU6VOY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Cristian\",\r\n    \"surname\": \"Rosas\",\r\n    \"username\": \"crosasss\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/users/updateUser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"users",
+								"updateUser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PasswordUpdate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDYzODUzNzcsImV4cCI6MTc0NjM4ODk3N30.ZEuci1751lBtcyM2I0fB2TEGxYfmtpakY0wHrhU6VOY",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"passwordOld\" : \"12345678\",\r\n    \"passwordNew\" : \"11111111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/users/passwordUpdate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"users",
+								"passwordUpdate"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteUser",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDYzODU5NjEsImV4cCI6MTc0NjM4OTU2MX0.ypHgSe9vz6JoSlrTeSf7_6D5KpuqWBV3jCbg3nTI80E",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirmDeletion\" : true,\r\n    \"password\" : \"11111111\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/users/userDelete/6817b8d0139ac92da2e2755e",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"users",
+								"userDelete",
+								"6817b8d0139ac92da2e2755e"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Hotels",
+			"item": [
+				{
+					"name": "AddHotel",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMjAiLCJpYXQiOjE3NDYzOTUyMTUsImV4cCI6MTc0NjM5ODgxNX0.WgQHq41603EItLbGUlgWc_jzTXokWnmnW3b_Ze30Hl0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameHotel\" : \"Century Hotel\",\r\n    \"hotelAddresss\" : \"10a avenida 09-10, zona 9. Guatemala, Guatemala\",\r\n    \"typeService\" : \"Gimnasio\",\r\n    \"description\" : \"Servicio de gimnasio de 8:00 am a 9:00 pm\",\r\n    \"priceService\" : 40,\r\n    \"typeCategory\": \"3 estrellas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/hotels/addHotel",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"hotels",
+								"addHotel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewHotels",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/hotels/viewHotels",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"hotels",
+								"viewHotels"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateHotel",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMjAiLCJpYXQiOjE3NDYzOTgxMzIsImV4cCI6MTc0NjQwMTczMn0.hEVs0Z3YAClpWccazOADaW7Oq6ntA_qaFR8pXJZPuMM",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameHotel\" : \"Century Hotel\",\r\n    \"hotelAddresss\" : \"10a avenida 09-10, zona 9. Guatemala, Guatemala\",\r\n    \"typeService\" : \"Cancha de basquet\",\r\n    \"description\" : \"Servicio de cancha de basquetball privada de 8:00 am a 10:00 pm\",\r\n    \"priceService\" : 100,\r\n    \"typeCategory\": \"3 estrellas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/hotels/updateHotel/6817e7e2f26903ae49a002cb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"hotels",
+								"updateHotel",
+								"6817e7e2f26903ae49a002cb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteHotel",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMjAiLCJpYXQiOjE3NDYzOTgxMzIsImV4cCI6MTc0NjQwMTczMn0.hEVs0Z3YAClpWccazOADaW7Oq6ntA_qaFR8pXJZPuMM",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/hotels/deleteHotel/6817e7e2f26903ae49a002cb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"hotels",
+								"deleteHotel",
+								"6817e7e2f26903ae49a002cb"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Gategories",
+			"item": [
+				{
+					"name": "AddCategory",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMjAiLCJpYXQiOjE3NDYzOTUyMTUsImV4cCI6MTc0NjM5ODgxNX0.WgQHq41603EItLbGUlgWc_jzTXokWnmnW3b_Ze30Hl0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeCategory\": \"3 estrellas\",\r\n    \"description\" : \"Hoteles categorizados a 3 estrellas\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/categories/addCategory",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"categories",
+								"addCategory"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewCategories",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/categories/viewCategories",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"categories",
+								"viewCategories"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Rooms",
+			"item": [
+				{
+					"name": "AddRoom",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDY0NjMzNDgsImV4cCI6MTc0NjQ2Njk0OH0.cURIPqHe7E8XjkMAhP07DP147OP0AbonEnmLSWEI18A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeRoom\" : \"Habitacion familiar\",\r\n    \"descriptionRoom\": \"Habitacion para familias numerosas, con servicio a cuarto\",\r\n    \"capacityRoom\" : 10,\r\n    \"priceRoom\" : 700,\r\n    \"date\": \"04-05-2025\",\r\n    \"nameHotel\": \"Century Hotel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/addRoom",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"addRoom"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewRooms",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/viewRooms",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"viewRooms"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateRoom",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDY0NjEzOTYsImV4cCI6MTc0NjQ2NDk5Nn0.9IoGMCC5o-3sF7l6blw_zmRAMQNK2dyrTpiAeGmiE3A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeRoom\" : \"Habitacion presidencial\",\r\n    \"descriptionRoom\": \"Habitacion mas exclusiva del hotel con servicio 24 horas\",\r\n    \"capacityRoom\" : 5,\r\n    \"priceRoom\" : 1500,\r\n    \"nameHotel\": \"Century Hotel\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateRoom/68181e451e41e1ea6641eea2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"updateRoom",
+								"68181e451e41e1ea6641eea2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DateAvailableRoom",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDY0NjMzNDgsImV4cCI6MTc0NjQ2Njk0OH0.cURIPqHe7E8XjkMAhP07DP147OP0AbonEnmLSWEI18A",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"date\" : \"2025-05-06\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateDateAvailableRoom/6818ea80523988f192af2abb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"updateDateAvailableRoom",
+								"6818ea80523988f192af2abb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteRoom",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDY0NjI3MTUsImV4cCI6MTc0NjQ2NjMxNX0._qQx7UgUZjeDV6xcIUjQ5yke9eTTBALa-wAI29S9lgs",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/deleteRoom/68181e451e41e1ea6641eea2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"deleteRoom",
+								"68181e451e41e1ea6641eea2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

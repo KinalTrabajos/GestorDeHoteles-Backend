@@ -1,0 +1,49 @@
+[{
+  "_id": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "nameHotel": "Century Hotel",
+  "hotelAddresss": "10a avenida 09-10, zona 9. Guatemala, Guatemala",
+  "services": [
+    {
+      "typeService": "Gimnasio",
+      "description": "Servicio de gimnasio de 8:00 am a 9:00 pm",
+      "priceService": 40,
+      "_id": {
+        "$oid": "6817e7e2f26903ae49a002cc"
+      }
+    },
+    {
+      "typeService": "Cancha de basquet",
+      "description": "Servicio de cancha de basquetball privada de 8:00 am a 10:00 pm",
+      "priceService": 100,
+      "_id": {
+        "$oid": "6817ec193ae8afc5e930e2cd"
+      }
+    }
+  ],
+  "keeperRooms": [
+    {
+      "$oid": "68181bc5c732b1626f557d24"
+    },
+    {
+      "$oid": "68181e451e41e1ea6641eea2"
+    },
+    {
+      "$oid": "6818ea80523988f192af2abb"
+    }
+  ],
+  "keeperCategory": {
+    "$oid": "6817e28959d4223c476b0eec"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e80020"
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-04T22:19:14.099Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-05T16:42:40.597Z"
+  }
+}]

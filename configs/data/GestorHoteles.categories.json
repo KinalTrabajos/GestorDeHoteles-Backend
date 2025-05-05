@@ -1,0 +1,37 @@
+[{
+  "_id": {
+    "$oid": "6817e28959d4223c476b0eec"
+  },
+  "typeCategory": "3 estrellas",
+  "description": "Hoteles categorizados a 3 estrellas",
+  "keeperHotel": [
+    {
+      "$oid": "6817e642b5b6b49bc10eba56"
+    },
+    {
+      "$oid": "6817e7e2f26903ae49a002cb"
+    }
+  ],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-04T21:56:25.994Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-04T22:19:14.104Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6817e68d78c16d179c7c9bc6"
+  },
+  "typeCategory": "GlobalCategory",
+  "description": "Here you will find all products without a defined category.",
+  "keeperHotel": [],
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-04T22:13:33.420Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-04T22:13:33.420Z"
+  }
+}]
