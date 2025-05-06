@@ -8,7 +8,7 @@ export const generarJWT =  (uid = ' ') => {
             playload,
             process.env.SECRETORPRYVATEKEY,
             {
-                expiresIn: '1h'
+                expiresIn: '5h'
             },
             (err, token) => {
                 err ? (console.log(err), reject('Failed to generate token')) : resolve(token);

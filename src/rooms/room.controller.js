@@ -48,6 +48,7 @@ export const viewRooms = async (req, res = response) => {
         const rooms = await Room.find(query)
             .populate({path: 'keeperHotel', match: {state:true}, select: 'nameHotel'})
             .populate({path: 'keeperAdmin', match: {state:true}, select: 'name'})
+            .populate({path: 'datesAvialableRoom.keeperUser', match: {state: true}, select: 'username'})
             .skip(Number(desde))
             .limit(Number(limite));
 

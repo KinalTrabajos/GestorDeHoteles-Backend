@@ -31,7 +31,12 @@ const RoomChema = Schema({
             availabilityRoom: {
                 type: Boolean,
                 default: true
-            }
+            },
+            keeperUser: {
+                type: Schema.Types.ObjectId,
+                ref: 'User',
+                required: false
+            },
         },
     ],
     keeperHotel: {
