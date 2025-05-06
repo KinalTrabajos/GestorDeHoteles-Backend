@@ -62,18 +62,171 @@
       "date": {
         "$date": "2025-05-05T00:00:00.000Z"
       },
-      "availabilityRoom": true,
+      "availabilityRoom": false,
       "_id": {
         "$oid": "6818eab9523988f192af2ad3"
+      },
+      "keeperUser": {
+        "$oid": "6817b8d0139ac92da2e2755e"
       }
     },
     {
       "date": {
         "$date": "2025-05-06T00:00:00.000Z"
       },
-      "availabilityRoom": true,
+      "availabilityRoom": false,
       "_id": {
         "$oid": "6818eabd523988f192af2ad8"
+      },
+      "keeperUser": {
+        "$oid": "6817b8d0139ac92da2e2755e"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-07T00:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6819ab3c18788bb333729886"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-08T00:00:00.000Z"
+      },
+      "availabilityRoom": false,
+      "_id": {
+        "$oid": "6819ab4318788bb33372988d"
+      },
+      "keeperUser": {
+        "$oid": "6817b8d0139ac92da2e2755e"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-09T00:00:00.000Z"
+      },
+      "availabilityRoom": false,
+      "_id": {
+        "$oid": "6819b7c4db248afbbbf9067a"
+      },
+      "keeperUser": {
+        "$oid": "6817b8d0139ac92da2e2755e"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-10T00:00:00.000Z"
+      },
+      "availabilityRoom": false,
+      "_id": {
+        "$oid": "6819b7c8db248afbbbf90683"
+      },
+      "keeperUser": {
+        "$oid": "6817b8d0139ac92da2e2755e"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-11T00:00:00.000Z"
+      },
+      "availabilityRoom": false,
+      "_id": {
+        "$oid": "6819b7cbdb248afbbbf9068d"
+      },
+      "keeperUser": {
+        "$oid": "6817b8d0139ac92da2e2755e"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-12T00:00:00.000Z"
+      },
+      "availabilityRoom": false,
+      "_id": {
+        "$oid": "6819b7cedb248afbbbf90698"
+      },
+      "keeperUser": {
+        "$oid": "6817b8d0139ac92da2e2755e"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-13T00:00:00.000Z"
+      },
+      "availabilityRoom": false,
+      "_id": {
+        "$oid": "6819b7d2db248afbbbf906a4"
+      },
+      "keeperUser": {
+        "$oid": "6817b8d0139ac92da2e2755e"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-14T00:00:00.000Z"
+      },
+      "availabilityRoom": false,
+      "_id": {
+        "$oid": "6819b7d6db248afbbbf906b1"
+      },
+      "keeperUser": {
+        "$oid": "6817b8d0139ac92da2e2755e"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-15T00:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6819b7d9db248afbbbf906bf"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-16T00:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6819b7dcdb248afbbbf906ce"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-17T00:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6819b7dfdb248afbbbf906de"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-18T00:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6819b7e2db248afbbbf906ef"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-19T00:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6819b7e5db248afbbbf90701"
+      }
+    },
+    {
+      "date": {
+        "$date": "2025-05-20T00:00:00.000Z"
+      },
+      "availabilityRoom": true,
+      "_id": {
+        "$oid": "6819b7ebdb248afbbbf90714"
       }
     }
   ],
@@ -88,6 +241,6 @@
     "$date": "2025-05-05T16:42:40.589Z"
   },
   "updatedAt": {
-    "$date": "2025-05-05T16:43:41.209Z"
+    "$date": "2025-05-06T08:03:55.721Z"
   }
 }]

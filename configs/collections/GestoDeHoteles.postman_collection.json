@@ -516,13 +516,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDY0NjMzNDgsImV4cCI6MTc0NjQ2Njk0OH0.cURIPqHe7E8XjkMAhP07DP147OP0AbonEnmLSWEI18A",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDY1MTI2ODQsImV4cCI6MTc0NjUzMDY4NH0.BDLr-aFAgBPOohumtYfABmOVJZwKNFc02R2Y0P8JBXU",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"date\" : \"2025-05-06\"\r\n}",
+							"raw": "{\r\n    \"date\" : \"2025-05-20\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -571,6 +571,147 @@
 								"rooms",
 								"deleteRoom",
 								"68181e451e41e1ea6641eea2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Reservation",
+			"item": [
+				{
+					"name": "AddReservation",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDY1MTE5ODQsImV4cCI6MTc0NjUyOTk4NH0.vIPeGjMgfRAw8KhBV66fDzpjQOMipUfGRGBIwHprBv0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startDate\" : \"2025-05-15\",\r\n    \"endDate\" : \"2025-05-15\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/addReservation/6818ea80523988f192af2abb",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"addReservation",
+								"6818ea80523988f192af2abb"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReservationView",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/viewReservations",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"viewReservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateReservation",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDY1MTE5ODQsImV4cCI6MTc0NjUyOTk4NH0.vIPeGjMgfRAw8KhBV66fDzpjQOMipUfGRGBIwHprBv0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startDate\" : \"2025-05-08\",\r\n    \"endDate\" : \"2025-05-10\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/updateReservation/6819abb218788bb3337298c3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"updateReservation",
+								"6819abb218788bb3337298c3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CancelReservation",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDY1MTE5ODQsImV4cCI6MTc0NjUyOTk4NH0.vIPeGjMgfRAw8KhBV66fDzpjQOMipUfGRGBIwHprBv0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/cancelReservation/6819be1ef61a4e0b683bc142",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"cancelReservation",
+								"6819be1ef61a4e0b683bc142"
 							]
 						}
 					},

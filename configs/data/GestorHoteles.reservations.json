@@ -1,0 +1,135 @@
+[{
+  "_id": {
+    "$oid": "6819aaaedbe9e577e3ee3173"
+  },
+  "keeperUser": {
+    "$oid": "6817b8d0139ac92da2e2755e"
+  },
+  "keeperRoom": {
+    "$oid": "6818ea80523988f192af2abb"
+  },
+  "datesReservation": {
+    "startDate": {
+      "$date": "2025-05-05T00:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2025-05-06T00:00:00.000Z"
+    }
+  },
+  "stateReservation": "Pendiente",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-06T06:22:38.453Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T06:22:38.453Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6819abb218788bb3337298c3"
+  },
+  "keeperUser": {
+    "$oid": "6817b8d0139ac92da2e2755e"
+  },
+  "keeperRoom": {
+    "$oid": "6818ea80523988f192af2abb"
+  },
+  "datesReservation": {
+    "startDate": {
+      "$date": "2025-05-08T00:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2025-05-10T00:00:00.000Z"
+    }
+  },
+  "stateReservation": "Pendiente",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-06T06:26:58.812Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T07:33:10.215Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6819bd9df61a4e0b683bc0aa"
+  },
+  "keeperUser": {
+    "$oid": "6817b8d0139ac92da2e2755e"
+  },
+  "keeperRoom": {
+    "$oid": "6818ea80523988f192af2abb"
+  },
+  "datesReservation": {
+    "startDate": {
+      "$date": "2025-05-11T00:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2025-05-11T00:00:00.000Z"
+    }
+  },
+  "stateReservation": "Pendiente",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-06T07:43:25.430Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T07:44:34.270Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6819bdfef61a4e0b683bc10f"
+  },
+  "keeperUser": {
+    "$oid": "6817b8d0139ac92da2e2755e"
+  },
+  "keeperRoom": {
+    "$oid": "6818ea80523988f192af2abb"
+  },
+  "datesReservation": {
+    "startDate": {
+      "$date": "2025-05-12T00:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2025-05-14T00:00:00.000Z"
+    }
+  },
+  "stateReservation": "Pendiente",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-06T07:45:02.318Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T07:45:02.318Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6819be1ef61a4e0b683bc142"
+  },
+  "keeperUser": {
+    "$oid": "6817b8d0139ac92da2e2755e"
+  },
+  "keeperRoom": {
+    "$oid": "6818ea80523988f192af2abb"
+  },
+  "datesReservation": {
+    "startDate": {
+      "$date": "2025-05-15T00:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2025-05-15T00:00:00.000Z"
+    }
+  },
+  "stateReservation": "Cancelada",
+  "state": false,
+  "createdAt": {
+    "$date": "2025-05-06T07:45:34.347Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-06T08:03:55.727Z"
+  }
+}]
