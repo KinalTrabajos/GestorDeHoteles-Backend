@@ -183,7 +183,7 @@ export const updateReservation = async (req, res = response) => {
 export const cancelReservation = async (req, res = response) => {
     try {
         const { id } = req.params;
-        const { confirm } = req.body;   // esperamos { confirm: true } para confirmar
+        const { confirm } = req.body;   
         const reservation = await Reservation.findById(id);
         if (!reservation) {
             return res.status(404).json({ success: false, msg: 'Reservation not found' });

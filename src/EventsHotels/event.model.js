@@ -26,7 +26,7 @@ const EventSchema = Schema({
             required: [true, 'Type of service required'],
             maxLength: [25, 'Cant be overcome 25 characters']
         },
-        description: {
+        descriptionServices: {
             type: String,
             required: [true, 'Description required'],
             maxLength: [200, 'Cant be overcome 200 characters']

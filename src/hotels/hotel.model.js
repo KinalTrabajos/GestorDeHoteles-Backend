@@ -46,6 +46,11 @@ const HotelChema = Schema({
         ref: 'User',
         required: false
     },
+    keeperEvents: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Event',
+        required: false
+    }],
     state: {
         type: Boolean,
         default: true
