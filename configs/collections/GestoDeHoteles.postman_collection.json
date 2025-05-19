@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"crosasss\",\r\n    \"password\": \"11111111\"\r\n}",
+							"raw": "{\r\n    \"username\": \"kreyes\",\r\n    \"password\": \"12345678\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -712,6 +712,273 @@
 								"reservations",
 								"cancelReservation",
 								"6819be1ef61a4e0b683bc142"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Events",
+			"item": [
+				{
+					"name": "AddEventGeneral",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc1MjY1MDMsImV4cCI6MTc0NzU0NDUwM30.df63wxwctQjB2D661ZmTDWUd0sfu7KminqDBH-QJX64",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEvent\" : \"Concierto de mana\",\r\n    \"description\" : \"Concierto de mana para maximo de 100 personas\",\r\n    \"startDate\" : \"2025-05-25\",\r\n    \"endDate\" : \"2025-05-26\",\r\n    \"nameHotel\" : \"Century Hotel\",\r\n    \"typeService\" : \"Bar  con meseros\",\r\n    \"descriptionServices\" : \"Un servicio de bar con meseros\",\r\n    \"priceService\" : 50\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/addEventGeneral",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"addEventGeneral"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddEventPrivate",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc1MjY1MDMsImV4cCI6MTc0NzU0NDUwM30.df63wxwctQjB2D661ZmTDWUd0sfu7KminqDBH-QJX64",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEvent\" : \"Organizacion de bodas\",\r\n    \"description\" : \"Se organizan bodas en el jardin del hotel, con todoas las comodidades\",\r\n    \"nameHotel\" : \"Century Hotel\",\r\n    \"typeService\" : \"Bar con meseros\",\r\n    \"descriptionServices\" : \"Un servicio de bar con meseros\",\r\n    \"priceService\" : 500\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/addEventPrivate",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"addEventPrivate"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewEvent",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/viewEvents",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"viewEvents"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteEvent",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc1OTk4ODQsImV4cCI6MTc0NzYxNzg4NH0.0aM9EzoaymfN0eOE-oLPiUwlWAMHfncGorrM8hT8I3k",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/deleteEvent/6829478d4d1512ca74635be3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"deleteEvent",
+								"6829478d4d1512ca74635be3"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateEventGeneral",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc2NzI0NzcsImV4cCI6MTc0NzY5MDQ3N30.cmWeTiL-sjhCqV6g8IYfd-cXKkCahtv03qLGqsNdxbk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEvent\" : \"Organizacion de bodas\",\r\n    \"startDate\" : \"2025-05-25\",\r\n    \"endDate\" : \"2025-05-26\",\r\n    \"description\" : \"Se organizan bodas en el jardin del hotel, con todoas las comodidades\",\r\n    \"typeEvent\" : \"Evento_Privado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/updateEventGeneral/6829241c44ee9d5f39a05579",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"updateEventGeneral",
+								"6829241c44ee9d5f39a05579"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateEventPrivate",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc2NzI0NzcsImV4cCI6MTc0NzY5MDQ3N30.cmWeTiL-sjhCqV6g8IYfd-cXKkCahtv03qLGqsNdxbk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"nameEvent\" : \"Organizacion de bodas\",\r\n    \"description\" : \"Se organizan bodas en el jardin del hotel, con todoas las comodidades\",\r\n    \"typeEvent\" : \"Evento_Privado\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/updateEventPrivate/6829241c44ee9d5f39a05579",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"updateEventPrivate",
+								"6829241c44ee9d5f39a05579"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc2NzI0NzcsImV4cCI6MTc0NzY5MDQ3N30.cmWeTiL-sjhCqV6g8IYfd-cXKkCahtv03qLGqsNdxbk",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"typeService\" : \"Buffete\",\r\n    \"descriptionServices\" : \"Un servicio de buffete\",\r\n    \"priceService\" : 6000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/updateEventPrivate/6829478d4d1512ca74635be3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"events",
+								"updateEventPrivate",
+								"6829478d4d1512ca74635be3"
 							]
 						}
 					},

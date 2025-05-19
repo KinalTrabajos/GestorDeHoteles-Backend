@@ -75,21 +75,11 @@ export const updateHotel = async (req, res) => {
     try {
         const { id } = req.params;
         const { _id, ...data } = req.body;
-
-        const category = await Category.findOne({typeCategory : data.typeCategory});
         
         const hotel = await Hotel.findByIdAndUpdate (
             id, 
             {
                 ...data,
-                $push:{
-                    services: [{
-                        typeService: data.typeService,
-                        description: data.description,
-                        priceService: data.priceService
-                    }]
-                },
-                keeperCategory: category._id,
                 state: true
             },
             { new: true }

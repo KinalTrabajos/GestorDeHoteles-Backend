@@ -113,7 +113,8 @@ export const updateDateAvailableRoom = async (req, res) => {
                 },
                 state: true,
             },
-            { new: true });
+            { new: true }
+        );
 
         res.status(200).json({
             success: true,

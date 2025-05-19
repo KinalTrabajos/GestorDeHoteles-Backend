@@ -11,9 +11,13 @@ const EventSchema = Schema({
         required: [true, 'Description required'],
         maxLength: [200, 'Cant be overcome 200 characters']
     },
-    dateEvent: {
-        type: Date,
-        required: [true, 'Date required'],
+    datesEvent: {
+        startDate: {
+            type: Date
+        },
+        endDate: {
+            type: Date
+        }
     },
     keeperHotel: {
         type: Schema.Types.ObjectId,
@@ -26,7 +30,7 @@ const EventSchema = Schema({
             required: [true, 'Type of service required'],
             maxLength: [25, 'Cant be overcome 25 characters']
         },
-        description: {
+        descriptionServices: {
             type: String,
             required: [true, 'Description required'],
             maxLength: [200, 'Cant be overcome 200 characters']
@@ -37,6 +41,12 @@ const EventSchema = Schema({
             min: [1, 'Price must be greater than 1']
         }
     }],
+    typeEvent: {
+        type: String,
+        required: [true, 'Type of event required'],
+        enum: ['Evento_General', 'Evento_Privado'],
+        default: 'Evento_General'
+    },
     state: {
         type: Boolean,
         default: true

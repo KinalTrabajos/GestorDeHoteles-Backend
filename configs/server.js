@@ -15,7 +15,7 @@ import categoryRoutes from '../src/categories/category.routes.js';
 import hotelRoutes from '../src/hotels/hotel.routes.js';
 import roomRoutes from '../src/rooms/room.routes.js';
 import reservationRoutes from '../src/reservations/reservation.routes.js';
-
+import eventRoutes from '../src/EventsHotels/event.routes.js';
 
 const middlewares = (app) => {
     app.use(express.urlencoded({extended : false}));
@@ -33,6 +33,7 @@ const routes = (app) => {
     app.use('/gestorHoteles/v1/hotels', hotelRoutes);
     app.use('/gestorHoteles/v1/rooms', roomRoutes);
     app.use('/gestorHoteles/v1/reservations', reservationRoutes);
+    app.use('/gestorHoteles/v1/events', eventRoutes);
 };
 
 export const conetarDB = async() => {

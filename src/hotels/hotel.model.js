@@ -15,18 +15,18 @@ const HotelChema = Schema({
         {
             typeService: {
                 type: String,
-                required: [true, 'Type of service required'],
+                required: false,
                 maxLength: [25, 'Cant be overcome 25 characters']
             },
             description: {
                 type: String,
-                required: [true, 'Description required'],
+                required: false,
                 maxLength: [200, 'Cant be overcome 200 characters']
 
             },
             priceService: {
                 type: Number,
-                required: [true, 'Price required'],
+                required: false,
                 min: [1, 'Price must be greater than 1']
             }
         }
@@ -46,6 +46,11 @@ const HotelChema = Schema({
         ref: 'User',
         required: false
     },
+    keeperEvents: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Event',
+        required: false
+    }],
     state: {
         type: Boolean,
         default: true
