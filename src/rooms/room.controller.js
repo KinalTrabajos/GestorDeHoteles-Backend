@@ -108,7 +108,7 @@ export const updateDateAvailableRoom = async (req, res) => {
             {
                 $push: {
                     datesAvialableRoom: [{
-                    date: new Date(data.date)
+                        date: new Date(data.date)
                     }]
                 },
                 state: true,

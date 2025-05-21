@@ -224,13 +224,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMjAiLCJpYXQiOjE3NDYzOTUyMTUsImV4cCI6MTc0NjM5ODgxNX0.WgQHq41603EItLbGUlgWc_jzTXokWnmnW3b_Ze30Hl0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3Nzg1MTksImV4cCI6MTc0Nzc5NjUxOX0.CpcFSyOaCeiPodn5_dPua_lfd_VIKnvQUFA3Wey7Weo",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nameHotel\" : \"Century Hotel\",\r\n    \"hotelAddresss\" : \"10a avenida 09-10, zona 9. Guatemala, Guatemala\",\r\n    \"typeService\" : \"Gimnasio\",\r\n    \"description\" : \"Servicio de gimnasio de 8:00 am a 9:00 pm\",\r\n    \"priceService\" : 40,\r\n    \"typeCategory\": \"3 estrellas\"\r\n}",
+							"raw": "{\r\n    \"nameHotel\" : \"Hotel las tres palmas\",\r\n    \"hotelAddresss\" : \"10a avenida 81-80, zona 10. Guatemala, Guatemala\",\r\n    \"typeService\" : \"Gimnasio\",\r\n    \"description\" : \"Servicio de gimnasio de 8:00 am a 9:00 pm\",\r\n    \"priceService\" : 40,\r\n    \"typeCategory\": \"3 estrellas\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -355,7 +355,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMjAiLCJpYXQiOjE3NDYzOTUyMTUsImV4cCI6MTc0NjM5ODgxNX0.WgQHq41603EItLbGUlgWc_jzTXokWnmnW3b_Ze30Hl0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMTEiLCJpYXQiOjE3NDc3NzgzODcsImV4cCI6MTc0Nzc5NjM4N30.r_uvqpjjZGlimjca6QhA6I19kXisYahj2QsTHAMMj9E",
 								"type": "text"
 							}
 						],
@@ -419,13 +419,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDY0NjMzNDgsImV4cCI6MTc0NjQ2Njk0OH0.cURIPqHe7E8XjkMAhP07DP147OP0AbonEnmLSWEI18A",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3Nzg1MTksImV4cCI6MTc0Nzc5NjUxOX0.CpcFSyOaCeiPodn5_dPua_lfd_VIKnvQUFA3Wey7Weo",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"typeRoom\" : \"Habitacion familiar\",\r\n    \"descriptionRoom\": \"Habitacion para familias numerosas, con servicio a cuarto\",\r\n    \"capacityRoom\" : 10,\r\n    \"priceRoom\" : 700,\r\n    \"date\": \"04-05-2025\",\r\n    \"nameHotel\": \"Century Hotel\"\r\n}",
+							"raw": "{\r\n    \"typeRoom\" : \"Habitacion familiar\",\r\n    \"descriptionRoom\": \"Habitacion para familias numerosas, con servicio a cuarto\",\r\n    \"capacityRoom\" : 10,\r\n    \"priceRoom\" : 1000,\r\n    \"date\": \"04-05-2025\",\r\n    \"nameHotel\": \"Hotel las tres palmas\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -478,13 +478,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDY0NjEzOTYsImV4cCI6MTc0NjQ2NDk5Nn0.9IoGMCC5o-3sF7l6blw_zmRAMQNK2dyrTpiAeGmiE3A",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3ODMyMjIsImV4cCI6MTc0NzgwMTIyMn0.ST6doYpgAQgi2DuatM2voKu6H1fCEAFsl3Sl6aHyusw",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"typeRoom\" : \"Habitacion presidencial\",\r\n    \"descriptionRoom\": \"Habitacion mas exclusiva del hotel con servicio 24 horas\",\r\n    \"capacityRoom\" : 5,\r\n    \"priceRoom\" : 1500,\r\n    \"nameHotel\": \"Century Hotel\"\r\n}",
+							"raw": "{\r\n    \"typeRoom\" : \"Habitacion presidencial\",\r\n    \"descriptionRoom\": \"Habitacion para ejecutivos o personas que necesiten servicios 24hs\",\r\n    \"capacityRoom\" : 5,\r\n    \"priceRoom\" : 1500,\r\n    \"nameHotel\": \"Hotel las tres palmas\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -492,7 +492,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateRoom/68181e451e41e1ea6641eea2",
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateRoom/682d0d8296018a0eb4cf7519",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -503,7 +503,7 @@
 								"v1",
 								"rooms",
 								"updateRoom",
-								"68181e451e41e1ea6641eea2"
+								"682d0d8296018a0eb4cf7519"
 							]
 						}
 					},
@@ -516,13 +516,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDY1MTI2ODQsImV4cCI6MTc0NjUzMDY4NH0.BDLr-aFAgBPOohumtYfABmOVJZwKNFc02R2Y0P8JBXU",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3Nzg1MTksImV4cCI6MTc0Nzc5NjUxOX0.CpcFSyOaCeiPodn5_dPua_lfd_VIKnvQUFA3Wey7Weo",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"date\" : \"2025-05-20\"\r\n}",
+							"raw": "{\r\n    \"date\" : \"2025-05-30\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -530,7 +530,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateDateAvailableRoom/6818ea80523988f192af2abb",
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateDateAvailableRoom/682cfc4b0d940b6a7ae6301e",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -541,7 +541,7 @@
 								"v1",
 								"rooms",
 								"updateDateAvailableRoom",
-								"6818ea80523988f192af2abb"
+								"682cfc4b0d940b6a7ae6301e"
 							]
 						}
 					},
@@ -588,13 +588,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDY1MTE5ODQsImV4cCI6MTc0NjUyOTk4NH0.vIPeGjMgfRAw8KhBV66fDzpjQOMipUfGRGBIwHprBv0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3Nzg1MTksImV4cCI6MTc0Nzc5NjUxOX0.CpcFSyOaCeiPodn5_dPua_lfd_VIKnvQUFA3Wey7Weo",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"startDate\" : \"2025-05-15\",\r\n    \"endDate\" : \"2025-05-15\"\r\n}",
+							"raw": "{\r\n    \"startDate\": \"2025-05-20T18:30:00Z\",\r\n    \"endDate\": \"2025-05-21T20:00:00Z\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -602,7 +602,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/addReservation/6818ea80523988f192af2abb",
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/addReservation/682cfc4b0d940b6a7ae6301e",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -613,7 +613,7 @@
 								"v1",
 								"reservations",
 								"addReservation",
-								"6818ea80523988f192af2abb"
+								"682cfc4b0d940b6a7ae6301e"
 							]
 						}
 					},
@@ -636,6 +636,29 @@
 								"v1",
 								"reservations",
 								"viewReservations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewReservationsByIdHotel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/viewReservationsByHotel/682d0d4b53507cda4f4f325c",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"viewReservationsByHotel",
+								"682d0d4b53507cda4f4f325c"
 							]
 						}
 					},
@@ -712,6 +735,218 @@
 								"reservations",
 								"cancelReservation",
 								"6819be1ef61a4e0b683bc142"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConfirmReservation",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3Nzg1MTksImV4cCI6MTc0Nzc5NjUxOX0.CpcFSyOaCeiPodn5_dPua_lfd_VIKnvQUFA3Wey7Weo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ConfirmReservation\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/confirmReservation/682cfd630d940b6a7ae630a5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"confirmReservation",
+								"682cfd630d940b6a7ae630a5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "AddReservationEvent",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc3NTIzMDQsImV4cCI6MTc0Nzc3MDMwNH0.cktKuYIWCbUA7BfomDpT4x_ZxRcqAUqhhGHLnzyjo-8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startDate\": \"2025-05-20T18:30:00Z\",\r\n    \"endDate\": \"2025-05-20T20:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/addReservationEvent/6829478d4d1512ca74635be3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"addReservationEvent",
+								"6829478d4d1512ca74635be3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewEventReservations",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/viewReservationsEvent",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"viewReservationsEvent"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateReservation",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc4MzQ5MzAsImV4cCI6MTc0Nzg1MjkzMH0.Ov9GOfzSIQHcDRxv9Kx0ShjtM-Pjq68f_Wz2zraVE3g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"startDate\": \"2025-05-20T18:30:00Z\",\r\n    \"endDate\": \"2025-05-22T20:00:00Z\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/updateEventReservation/682ca1bb2246b054f50f7fc5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"updateEventReservation",
+								"682ca1bb2246b054f50f7fc5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CancelReservationEvent",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc4MzQ5MzAsImV4cCI6MTc0Nzg1MjkzMH0.Ov9GOfzSIQHcDRxv9Kx0ShjtM-Pjq68f_Wz2zraVE3g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/cancelEventReservation/682ca1bb2246b054f50f7fc5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"cancelEventReservation",
+								"682ca1bb2246b054f50f7fc5"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ConfirmReservationEvent",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "x-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc4MzQ5MzAsImV4cCI6MTc0Nzg1MjkzMH0.Ov9GOfzSIQHcDRxv9Kx0ShjtM-Pjq68f_Wz2zraVE3g",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"ConfirmReservation\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/confirmReservationEvent/682ca1bb2246b054f50f7fc5",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"reservations",
+								"confirmReservationEvent",
+								"682ca1bb2246b054f50f7fc5"
 							]
 						}
 					},
@@ -947,19 +1182,19 @@
 					"response": []
 				},
 				{
-					"name": "New Request",
+					"name": "pudateServicesEvent",
 					"request": {
 						"method": "PUT",
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc2NzI0NzcsImV4cCI6MTc0NzY5MDQ3N30.cmWeTiL-sjhCqV6g8IYfd-cXKkCahtv03qLGqsNdxbk",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc3NTIzMDQsImV4cCI6MTc0Nzc3MDMwNH0.cktKuYIWCbUA7BfomDpT4x_ZxRcqAUqhhGHLnzyjo-8",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"typeService\" : \"Buffete\",\r\n    \"descriptionServices\" : \"Un servicio de buffete\",\r\n    \"priceService\" : 6000\r\n}",
+							"raw": "{\r\n    \"typeService\" : \"Buffete\",\r\n    \"descriptionServices\" : \"Un servicio de buffete ilimitado\",\r\n    \"priceService\" : 7000\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -967,7 +1202,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/events/updateEventPrivate/6829478d4d1512ca74635be3",
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/updateServicesEvent/6829478d4d1512ca74635be3",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -977,7 +1212,7 @@
 								"gestorHoteles",
 								"v1",
 								"events",
-								"updateEventPrivate",
+								"updateServicesEvent",
 								"6829478d4d1512ca74635be3"
 							]
 						}

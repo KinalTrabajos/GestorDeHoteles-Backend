@@ -2,6 +2,7 @@ import { response } from "express";
 import Reservation from './reservation.model.js';
 import User from "../users/user.model.js";
 import Room from "../rooms/room.model.js";
+import Event from "../EventsHotels/event.model.js";
 import { listDatesInRange } from "../helpers/roomDates.js";
 
 export const addReservation = async (req, res = response) => {
@@ -101,6 +102,50 @@ export const viewReservations = async (req, res = response) => {
         return res.status(500).json({
             success: false,
             msg: 'Error retrieving reservations',
+            error: error.message
+        });
+    }
+};
+
+export const viewReservationsByHotel = async (req, res = response) => {
+    const { idHotel } = req.params;
+    const { limite = 100, desde = 0 } = req.query;
+
+    try {
+        const reservations = await Reservation.find({ state: true })
+            .populate({
+                path: 'keeperUser',
+                match: { state: true },
+                select: 'username'
+            })
+            .populate({
+                path: 'keeperRoom',
+                match: { state: true },
+                select: 'typeRoom keeperHotel',
+                populate: {
+                    path: 'keeperHotel',
+                    match: { _id: idHotel, state: true },
+                    select: 'nameHotel'
+                }
+            })
+            .skip(Number(desde))
+            .limit(Number(limite));
+
+        // Filtrar manualmente las reservaciones con habitaciones cuyo hotel coincide
+        const filteredReservations = reservations.filter(
+            reservation => reservation.keeperRoom?.keeperHotel
+        );
+
+        return res.status(200).json({
+            success: true,
+            msg: `Reservations for hotel ID: ${idHotel}`,
+            total: filteredReservations.length,
+            reservations: filteredReservations
+        });
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            msg: 'Error retrieving reservations for hotel',
             error: error.message
         });
     }
@@ -234,6 +279,41 @@ export const cancelReservation = async (req, res = response) => {
         return res.status(500).json({
             success: false,
             msg: 'Error cancelling reservation',
+            error: error.message
+        });
+    }
+};
+
+export const confirmReservation = async (req, res = response) => {
+    try {
+        const { id } = req.params;
+        const { ConfirmReservation } = req.body;
+        
+        if (!ConfirmReservation) {
+            return res.status(400).json({
+                success: false,
+                msg: 'Please confirm reservation by resending with { "ConfirmReservation": true }'
+            });
+        }
+
+        await Reservation.findByIdAndUpdate(id, 
+            {
+                stateReservation: 'Confirmada',
+                state: true
+            },
+            { new: true }
+        );
+
+        return res.status(200).json({
+            success: true,
+            msg: 'Reservation confirmed',
+            reservation: await Reservation.findById(id)
+        });
+
+    } catch (error) {
+        return res.status(500).json({
+            success: false,
+            msg: 'Error confirming reservation',
             error: error.message
         });
     }

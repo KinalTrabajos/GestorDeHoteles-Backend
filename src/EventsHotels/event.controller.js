@@ -169,22 +169,18 @@ export const updateServicesEvent = async (req, res) => {
     try {
         
         const { id } = req.params;
-        const { _id, data } = req.body;
+        const { _id, ...data } = req.body;
 
         
-        console.log('REQ.BODY:', req.body);
-        
-        const event = await Event.findByIdAndUpdate (
+        const event = await Event.findByIdAndUpdate(
             id, 
             {
-                $push: {
-                    additionalServices: {
-                        $each: [{
-                            typeService: data.typeService,
-                            descriptionServices: data.descriptionServices,
-                            priceService: data.priceService
-                        }]
-                    }
+                $addToSet: {
+                    additionalServices: [{
+                        typeService: data.typeService,
+                        descriptionServices: data.descriptionServices,
+                        priceService: data.priceService
+                    }]
                 },
                 state: true
             },

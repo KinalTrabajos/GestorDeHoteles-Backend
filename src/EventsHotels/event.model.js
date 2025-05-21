@@ -24,23 +24,25 @@ const EventSchema = Schema({
         ref: 'Hotel',
         required: false
     },
-    additionalServices: [{
-        typeService: {
-            type: String,
-            required: [true, 'Type of service required'],
-            maxLength: [25, 'Cant be overcome 25 characters']
-        },
-        descriptionServices: {
-            type: String,
-            required: [true, 'Description required'],
-            maxLength: [200, 'Cant be overcome 200 characters']
-        },
-        priceService: {
-            type: Number,
-            required: [true, 'Price required'],
-            min: [1, 'Price must be greater than 1']
+    additionalServices: [
+        {
+            typeService: {
+                type: String,
+                required: [true, 'Type of service required'],
+                maxLength: [25, 'Cant be overcome 25 characters']
+            },
+            descriptionServices: {
+                type: String,
+                required: [true, 'Description required'],
+                maxLength: [200, 'Cant be overcome 200 characters']
+            },
+            priceService: {
+                type: Number,
+                required: [true, 'Price required'],
+                min: [1, 'Price must be greater than 1']
+            }
         }
-    }],
+    ],
     typeEvent: {
         type: String,
         required: [true, 'Type of event required'],

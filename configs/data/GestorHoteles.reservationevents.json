@@ -1,0 +1,54 @@
+[{
+  "_id": {
+    "$oid": "682ca1992246b054f50f7fb7"
+  },
+  "keeperUser": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "keeperEvent": {
+    "$oid": "6829478d4d1512ca74635be3"
+  },
+  "datesReservation": {
+    "startDate": {
+      "$date": "2025-05-20T14:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2025-05-20T18:00:00.000Z"
+    }
+  },
+  "stateReservation": "Pendiente",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-20T15:36:57.756Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T15:36:57.756Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682ca1bb2246b054f50f7fc5"
+  },
+  "keeperUser": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "keeperEvent": {
+    "$oid": "6829478d4d1512ca74635be3"
+  },
+  "datesReservation": {
+    "startDate": {
+      "$date": "2025-05-20T18:30:00.000Z"
+    },
+    "endDate": {
+      "$date": "2025-05-22T20:00:00.000Z"
+    }
+  },
+  "stateReservation": "Confirmada",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-20T15:37:31.221Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-21T14:03:26.197Z"
+  }
+}]

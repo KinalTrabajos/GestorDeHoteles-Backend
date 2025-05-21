@@ -36,7 +36,7 @@ const RoomChema = Schema({
                 type: Schema.Types.ObjectId,
                 ref: 'User',
                 required: false
-            },
+            }
         },
     ],
     keeperHotel: {

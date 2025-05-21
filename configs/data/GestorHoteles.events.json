@@ -1,0 +1,74 @@
+[{
+  "_id": {
+    "$oid": "6829241c44ee9d5f39a05579"
+  },
+  "nameEvent": "Organizacion de bodas",
+  "description": "Se organizan bodas en el jardin del hotel, con todoas las comodidades",
+  "datesEvent": {},
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "additionalServices": [
+    {
+      "typeService": "Bar  con meseros",
+      "descriptionServices": "Un servicio de bar con meseros",
+      "priceService": 50,
+      "_id": {
+        "$oid": "6829241c44ee9d5f39a0557a"
+      }
+    }
+  ],
+  "typeEvent": "Evento_Privado",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-18T00:04:44.992Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-19T17:23:28.374Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6829478d4d1512ca74635be3"
+  },
+  "nameEvent": "Organizacion de bodas",
+  "description": "Se organizan bodas en el jardin del hotel, con todoas las comodidades",
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "additionalServices": [
+    {
+      "typeService": "Bar con meseros",
+      "descriptionServices": "Un servicio de bar con meseros",
+      "priceService": 500,
+      "_id": {
+        "$oid": "6829478d4d1512ca74635be4"
+      }
+    },
+    {
+      "typeService": "Buffete",
+      "descriptionServices": "Un servicio de buffete ilimitado",
+      "priceService": 7000,
+      "_id": {
+        "$oid": "682c99baf1347cc2119902db"
+      }
+    },
+    {
+      "typeService": "Buffete",
+      "descriptionServices": "Un servicio de buffete ilimitado",
+      "priceService": 7000,
+      "_id": {
+        "$oid": "682c99c7e3389a2aacef366c"
+      }
+    }
+  ],
+  "typeEvent": "Evento_Privado",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-18T02:35:57.766Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-20T15:03:35.396Z"
+  },
+  "datesEvent": {}
+}]
