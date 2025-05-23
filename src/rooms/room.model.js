@@ -22,23 +22,6 @@ const RoomChema = Schema({
         required: [true, 'Price required'],
         min: [1, 'Price must be greater than 1']
     },
-    datesAvialableRoom: [
-        {
-            date : {
-                type: Date,
-                required: [true, 'Date required']
-            },
-            availabilityRoom: {
-                type: Boolean,
-                default: true
-            },
-            keeperUser: {
-                type: Schema.Types.ObjectId,
-                ref: 'User',
-                required: false
-            }
-        },
-    ],
     keeperHotel: {
         type: Schema.Types.ObjectId,
         ref: 'Hotel',
@@ -48,6 +31,10 @@ const RoomChema = Schema({
         type: Schema.Types.ObjectId,
         ref: 'User',
         required: false
+    },
+    numberRoom : {
+        type: Number,
+        required: true
     },
     state: {
         type: Boolean,

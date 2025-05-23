@@ -13,11 +13,9 @@ export const addRoom = async (req, res = response) => {
             descriptionRoom: data.descriptionRoom,
             capacityRoom: data.capacityRoom,
             priceRoom: data.priceRoom,
-            datesAvialableRoom: [{
-                date: new Date(data.date)
-            }],
             keeperHotel: hotel._id,
-            keeperAdmin: userId
+            keeperAdmin: userId,
+            numberRoom: data.numberRoom
         });
 
         await room.save();
@@ -48,7 +46,6 @@ export const viewRooms = async (req, res = response) => {
         const rooms = await Room.find(query)
             .populate({path: 'keeperHotel', match: {state:true}, select: 'nameHotel'})
             .populate({path: 'keeperAdmin', match: {state:true}, select: 'name'})
-            .populate({path: 'datesAvialableRoom.keeperUser', match: {state: true}, select: 'username'})
             .skip(Number(desde))
             .limit(Number(limite));
 
@@ -73,44 +70,43 @@ export const updateRoom = async (req, res) => {
     try {
         const { id } = req.params;
         const { _id, date, ...data } = req.body;
-        const hotel = await Hotel.findOne({nameHotel : data.nameHotel});
 
-        const room = await Room.findByIdAndUpdate(
-            id, 
+        const existingRoom = await Room.findById(id);
+        if (!existingRoom) {
+            return res.status(404).json({
+                success: false,
+                msg: 'Room not found'
+            });
+        }
+
+        const newHotel = await Hotel.findOne({ nameHotel: data.nameHotel, state: true });
+        if (!newHotel) {
+            return res.status(404).json({
+                success: false,
+                msg: 'New hotel not found'
+            });
+        }
+
+        const oldHotelId = existingRoom.keeperHotel?.toString();
+        const newHotelId = newHotel._id.toString();
+
+        // Solo si cambia el hotel, actualizar las referencias
+        if (oldHotelId && oldHotelId !== newHotelId) {
+            await Hotel.findByIdAndUpdate(oldHotelId, {
+                $pull: { keeperRooms: existingRoom._id }
+            });
+
+            await Hotel.findByIdAndUpdate(newHotelId, {
+                $addToSet: { keeperRooms: existingRoom._id }
+            });
+        }
+
+        // Luego actualiza la habitación con el nuevo hotel
+        const roomUpdate = await Room.findByIdAndUpdate(
+            id,
             {
                 ...data,
-                keeperHotel: hotel._id,
-                state: true,
-            },
-            { new: true });
-
-        res.status(200).json({
-            success: true,
-            msg: 'Room updated successfully',
-            room
-        })
-    } catch (error) {
-        res.status(500).json({
-            success: false,
-            msg: 'Error updating room',
-            error: error.message
-        })
-    }
-};
-
-export const updateDateAvailableRoom = async (req, res) => {
-    try {
-        const { id } = req.params;
-        const { _id, ...data } = req.body;
-
-        const room = await Room.findByIdAndUpdate(
-            id, 
-            {
-                $push: {
-                    datesAvialableRoom: [{
-                        date: new Date(data.date)
-                    }]
-                },
+                keeperHotel: newHotel._id,
                 state: true,
             },
             { new: true }
@@ -118,17 +114,19 @@ export const updateDateAvailableRoom = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            msg: 'Date avialable roomupdated successfully',
-            room
-        })
+            msg: 'Room updated successfully',
+            roomUpdate
+        });
+
     } catch (error) {
         res.status(500).json({
             success: false,
             msg: 'Error updating room',
             error: error.message
-        })
+        });
     }
 };
+
 
 export const deleteRoom = async (req, res) => {
     const { id } = req.params;

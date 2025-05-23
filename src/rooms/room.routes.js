@@ -4,7 +4,9 @@ import { validarCampos } from '../middlewares/validar-campos.js';
 import { validarJWT } from "../middlewares/validar-jwt.js";
 import { tieneRole } from "../middlewares/validar-roles.js";
 
-import { addRoom, viewRooms, updateRoom, updateDateAvailableRoom, deleteRoom } from './room.controller.js'
+import { addRoom, viewRooms, updateRoom, deleteRoom } from './room.controller.js'
+
+import { validateCapacityAndPriceAndNumberRoom, confirmDeleteRoom } from  '../middlewares/validar-rooms.js';
 
 const router = Router();
 
@@ -13,6 +15,7 @@ router.post(
     [
         validarJWT,
         tieneRole('HOTEL_ADMIN'),
+        validateCapacityAndPriceAndNumberRoom,
         validarCampos
     ],
     addRoom
@@ -25,21 +28,12 @@ router.put(
     [
         validarJWT,
         tieneRole('HOTEL_ADMIN'),
+        validateCapacityAndPriceAndNumberRoom,
         validarCampos
     ],
     updateRoom
 );
 
-router.put(
-    "/updateDateAvailableRoom/:id",
-    [
-        validarJWT,
-        tieneRole('HOTEL_ADMIN'),
-        check("id", "It is not a valid id").isMongoId(),
-        validarCampos
-    ],
-    updateDateAvailableRoom
-);
 
 router.delete(
     "/deleteRoom/:id",
@@ -47,6 +41,7 @@ router.delete(
         validarJWT,
         tieneRole('HOTEL_ADMIN'),
         check("id", "It is not a valid id").isMongoId(),
+        confirmDeleteRoom,
         validarCampos
     ],
     deleteRoom

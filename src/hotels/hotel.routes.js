@@ -14,7 +14,7 @@ router.post(
     "/addHotel",
     [
         validarJWT,
-        tieneRole('PLATAFORM_ADMIN'),
+        tieneRole('PLATAFORM_ADMIN', 'HOTEL_ADMIN'),
         existsHotelName,
         existsHotelAddress,
         categoryExists,
@@ -29,7 +29,7 @@ router.put(
     "/updateHotel/:id",
     [
         validarJWT,
-        tieneRole('PLATAFORM_ADMIN'),
+        tieneRole('PLATAFORM_ADMIN', 'HOTEL_ADMIN'),
         check("id", "It is not a valid id").isMongoId(),
         validarCampos
     ],
@@ -40,7 +40,7 @@ router.delete(
     "/deleteHotel/:id",
     [
         validarJWT,
-        tieneRole('PLATAFORM_ADMIN'),
+        tieneRole('PLATAFORM_ADMIN', 'HOTEL_ADMIN'),
         confirmHotelDeletion,
         check("id", "It is not a valid id").isMongoId(),
         validarCampos

@@ -16,7 +16,8 @@ export const login = async(req, res) => {
                 surname: user.surname,
                 username: user.username,
                 email: user.email,
-                token: token
+                token: token,
+                role: user.role,
             }
         });
 

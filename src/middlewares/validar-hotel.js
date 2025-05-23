@@ -49,12 +49,12 @@ export const categoryExists = async (req = request, res = response, next) => {
 };
 
 export const confirmHotelDeletion = async (req = request, res = response, next) => {
-    const { confirm } = req.query;
+    const { confirm } = req.body;
 
-    if (confirm !== 'true') {
+    if (!confirm) {
         return res.status(400).json({
             success: false,
-            msg: 'Please confirm deletion by setting ?confirm=true in the request.'
+            msg: 'Please confirm deletion'
         });
     }
 
