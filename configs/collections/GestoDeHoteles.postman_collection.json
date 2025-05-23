@@ -16,7 +16,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"username\": \"kreyes\",\r\n    \"password\": \"12345678\"\r\n}",
+							"raw": "{\r\n    \"username\": \"Kreyes\",\r\n    \"password\": \"12345678\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -100,13 +100,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDYzODUzNzcsImV4cCI6MTc0NjM4ODk3N30.ZEuci1751lBtcyM2I0fB2TEGxYfmtpakY0wHrhU6VOY",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc5MjI0NTcsImV4cCI6MTc0Nzk0MDQ1N30.rgrz8W-F8mk1zf1Vr1CBij8YSWE3jo17h_dFe9zBcKs",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"name\": \"Cristian\",\r\n    \"surname\": \"Rosas\",\r\n    \"username\": \"crosasss\"\r\n}",
+							"raw": "{\r\n    \"name\": \"Kevin\",\r\n    \"surname\": \"Reyes\",\r\n    \"username\": \"Kreyes\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -137,13 +137,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDYzODUzNzcsImV4cCI6MTc0NjM4ODk3N30.ZEuci1751lBtcyM2I0fB2TEGxYfmtpakY0wHrhU6VOY",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwMjIwMzMsImV4cCI6MTc0ODA0MDAzM30.-c1YPbu8g--P_WXjITXvUZdZbFVLOT1thiIMuBauSYQ",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"passwordOld\" : \"12345678\",\r\n    \"passwordNew\" : \"11111111\"\r\n}",
+							"raw": "{\r\n    \"passwordOld\" : \"123456789\",\r\n    \"passwordNew\" : \"12345678\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -174,13 +174,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDYzODU5NjEsImV4cCI6MTc0NjM4OTU2MX0.ypHgSe9vz6JoSlrTeSf7_6D5KpuqWBV3jCbg3nTI80E",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc5MjI0NTcsImV4cCI6MTc0Nzk0MDQ1N30.rgrz8W-F8mk1zf1Vr1CBij8YSWE3jo17h_dFe9zBcKs",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"confirmDeletion\" : true,\r\n    \"password\" : \"11111111\"\r\n}",
+							"raw": "{\r\n    \"confirmDeletion\" : true,\r\n    \"password\" : \"123456789\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -188,7 +188,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/users/userDelete/6817b8d0139ac92da2e2755e",
+							"raw": "http://localhost:3001/gestorHoteles/v1/users/userDelete/6817b3c3aac703dc65e8001e",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -199,7 +199,7 @@
 								"v1",
 								"users",
 								"userDelete",
-								"6817b8d0139ac92da2e2755e"
+								"6817b3c3aac703dc65e8001e"
 							],
 							"query": [
 								{
@@ -224,13 +224,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3Nzg1MTksImV4cCI6MTc0Nzc5NjUxOX0.CpcFSyOaCeiPodn5_dPua_lfd_VIKnvQUFA3Wey7Weo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwMjIwNzMsImV4cCI6MTc0ODA0MDA3M30.n3Qvp1c11hBQEeVv99vRqogU18yRXVQbQ1OvA1Oh1DQ",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nameHotel\" : \"Hotel las tres palmas\",\r\n    \"hotelAddresss\" : \"10a avenida 81-80, zona 10. Guatemala, Guatemala\",\r\n    \"typeService\" : \"Gimnasio\",\r\n    \"description\" : \"Servicio de gimnasio de 8:00 am a 9:00 pm\",\r\n    \"priceService\" : 40,\r\n    \"typeCategory\": \"3 estrellas\"\r\n}",
+							"raw": "{\r\n    \"nameHotel\" : \"Hotel las mojarras\",\r\n    \"hotelAddresss\" : \"7A Avenida 15-45. Guatemala, Guatemala\",\r\n    \"typeService\" : \"Gimnasio\",\r\n    \"description\" : \"Servicio de gimnasio de 8:00 am a 9:00 pm\",\r\n    \"priceService\" : 40,\r\n    \"typeCategory\": \"3 estrellas\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -321,12 +321,21 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMjAiLCJpYXQiOjE3NDYzOTgxMzIsImV4cCI6MTc0NjQwMTczMn0.hEVs0Z3YAClpWccazOADaW7Oq6ntA_qaFR8pXJZPuMM",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwMjIwNzMsImV4cCI6MTc0ODA0MDA3M30.n3Qvp1c11hBQEeVv99vRqogU18yRXVQbQ1OvA1Oh1DQ",
 								"type": "text"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/hotels/deleteHotel/6817e7e2f26903ae49a002cb",
+							"raw": "http://localhost:3001/gestorHoteles/v1/hotels/deleteHotel/6830b36cb5a03b23967f90d6",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -337,7 +346,7 @@
 								"v1",
 								"hotels",
 								"deleteHotel",
-								"6817e7e2f26903ae49a002cb"
+								"6830b36cb5a03b23967f90d6"
 							]
 						}
 					},
@@ -419,13 +428,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3Nzg1MTksImV4cCI6MTc0Nzc5NjUxOX0.CpcFSyOaCeiPodn5_dPua_lfd_VIKnvQUFA3Wey7Weo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwMjIwNzMsImV4cCI6MTc0ODA0MDA3M30.n3Qvp1c11hBQEeVv99vRqogU18yRXVQbQ1OvA1Oh1DQ",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"typeRoom\" : \"Habitacion familiar\",\r\n    \"descriptionRoom\": \"Habitacion para familias numerosas, con servicio a cuarto\",\r\n    \"capacityRoom\" : 10,\r\n    \"priceRoom\" : 1000,\r\n    \"date\": \"04-05-2025\",\r\n    \"nameHotel\": \"Hotel las tres palmas\"\r\n}",
+							"raw": "{\r\n    \"typeRoom\" : \"Habitacion presidencial\",\r\n    \"descriptionRoom\": \"Habitacion para tener provacidad al maximo, y servicio las 24 horas\",\r\n    \"capacityRoom\" : 5,\r\n    \"priceRoom\" : 1500,\r\n    \"nameHotel\": \"Century Hotel\",\r\n    \"numberRoom\" : 6\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -478,13 +487,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3ODMyMjIsImV4cCI6MTc0NzgwMTIyMn0.ST6doYpgAQgi2DuatM2voKu6H1fCEAFsl3Sl6aHyusw",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc5MjI0NTcsImV4cCI6MTc0Nzk0MDQ1N30.rgrz8W-F8mk1zf1Vr1CBij8YSWE3jo17h_dFe9zBcKs",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"typeRoom\" : \"Habitacion presidencial\",\r\n    \"descriptionRoom\": \"Habitacion para ejecutivos o personas que necesiten servicios 24hs\",\r\n    \"capacityRoom\" : 5,\r\n    \"priceRoom\" : 1500,\r\n    \"nameHotel\": \"Hotel las tres palmas\"\r\n}",
+							"raw": "{\r\n    \"typeRoom\" : \"Habitacion presidencial\",\r\n    \"descriptionRoom\": \"Habitacion para tener provacidad al maximo, y servicio las 24 horas\",\r\n    \"capacityRoom\" : 5,\r\n    \"priceRoom\" : 1500,\r\n    \"nameHotel\": \"Hotel las tres palmas\",\r\n    \"numberRoom\" : 4\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -492,7 +501,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateRoom/682d0d8296018a0eb4cf7519",
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateRoom/682f34b3d0082dccc6680d88",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -503,7 +512,7 @@
 								"v1",
 								"rooms",
 								"updateRoom",
-								"682d0d8296018a0eb4cf7519"
+								"682f34b3d0082dccc6680d88"
 							]
 						}
 					},
@@ -554,12 +563,21 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDY0NjI3MTUsImV4cCI6MTc0NjQ2NjMxNX0._qQx7UgUZjeDV6xcIUjQ5yke9eTTBALa-wAI29S9lgs",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwMjIwNzMsImV4cCI6MTc0ODA0MDA3M30.n3Qvp1c11hBQEeVv99vRqogU18yRXVQbQ1OvA1Oh1DQ",
 								"type": "text"
 							}
 						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"confirm\" : true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/deleteRoom/68181e451e41e1ea6641eea2",
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/deleteRoom/6830b36cb5a03b23967f90d6",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -570,7 +588,7 @@
 								"v1",
 								"rooms",
 								"deleteRoom",
-								"68181e451e41e1ea6641eea2"
+								"6830b36cb5a03b23967f90d6"
 							]
 						}
 					},
@@ -588,13 +606,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3Nzg1MTksImV4cCI6MTc0Nzc5NjUxOX0.CpcFSyOaCeiPodn5_dPua_lfd_VIKnvQUFA3Wey7Weo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc5MjI0NTcsImV4cCI6MTc0Nzk0MDQ1N30.rgrz8W-F8mk1zf1Vr1CBij8YSWE3jo17h_dFe9zBcKs",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"startDate\": \"2025-05-20T18:30:00Z\",\r\n    \"endDate\": \"2025-05-21T20:00:00Z\"\r\n}",
+							"raw": "{\r\n    \"startDate\": \"2025-05-23T10:00:00Z\",\r\n    \"endDate\": \"2025-05-23T15:00:00Z\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -602,7 +620,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/addReservation/682cfc4b0d940b6a7ae6301e",
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/addReservation/682f2e899145cd583261fabe",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -613,7 +631,7 @@
 								"v1",
 								"reservations",
 								"addReservation",
-								"682cfc4b0d940b6a7ae6301e"
+								"682f2e899145cd583261fabe"
 							]
 						}
 					},
@@ -647,7 +665,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/viewReservationsByHotel/682d0d4b53507cda4f4f325c",
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/viewReservationsByHotel/6817e7e2f26903ae49a002cb",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -658,7 +676,7 @@
 								"v1",
 								"reservations",
 								"viewReservationsByHotel",
-								"682d0d4b53507cda4f4f325c"
+								"6817e7e2f26903ae49a002cb"
 							]
 						}
 					},
@@ -709,7 +727,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjhkMDEzOWFjOTJkYTJlMjc1NWUiLCJpYXQiOjE3NDY1MTE5ODQsImV4cCI6MTc0NjUyOTk4NH0.vIPeGjMgfRAw8KhBV66fDzpjQOMipUfGRGBIwHprBv0",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc5MjI0NTcsImV4cCI6MTc0Nzk0MDQ1N30.rgrz8W-F8mk1zf1Vr1CBij8YSWE3jo17h_dFe9zBcKs",
 								"type": "text"
 							}
 						],
@@ -723,7 +741,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/cancelReservation/6819be1ef61a4e0b683bc142",
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/cancelReservation/682f2fa97ea1e235befe6b44",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -734,7 +752,7 @@
 								"v1",
 								"reservations",
 								"cancelReservation",
-								"6819be1ef61a4e0b683bc142"
+								"682f2fa97ea1e235befe6b44"
 							]
 						}
 					},
@@ -747,7 +765,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODJjZmExMzVjOTA2NTQ5NThlODJjMGYiLCJpYXQiOjE3NDc3Nzg1MTksImV4cCI6MTc0Nzc5NjUxOX0.CpcFSyOaCeiPodn5_dPua_lfd_VIKnvQUFA3Wey7Weo",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc5MjI0NTcsImV4cCI6MTc0Nzk0MDQ1N30.rgrz8W-F8mk1zf1Vr1CBij8YSWE3jo17h_dFe9zBcKs",
 								"type": "text"
 							}
 						],
@@ -761,7 +779,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/confirmReservation/682cfd630d940b6a7ae630a5",
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/confirmReservation/682f2fa97ea1e235befe6b44",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -772,7 +790,7 @@
 								"v1",
 								"reservations",
 								"confirmReservation",
-								"682cfd630d940b6a7ae630a5"
+								"682f2fa97ea1e235befe6b44"
 							]
 						}
 					},

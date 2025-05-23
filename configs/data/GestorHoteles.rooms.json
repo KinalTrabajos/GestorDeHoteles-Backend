@@ -1,246 +1,138 @@
 [{
   "_id": {
-    "$oid": "68181e451e41e1ea6641eea2"
+    "$oid": "682f34b3d0082dccc6680d88"
   },
   "typeRoom": "Habitacion presidencial",
-  "descriptionRoom": "Habitacion mas exclusiva del hotel con servicio 24 horas",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
   "capacityRoom": 5,
   "priceRoom": 1500,
-  "datesAvialableRoom": [
-    {
-      "date": {
-        "$date": "2025-05-05T00:00:00.000Z"
-      },
-      "availabilityRoom": true,
-      "_id": {
-        "$oid": "6818e48d670d3025fbb4214e"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-06T00:00:00.000Z"
-      },
-      "availabilityRoom": true,
-      "_id": {
-        "$oid": "6818e4cd8712c0ea5e9cd8bc"
-      }
-    }
-  ],
   "keeperHotel": {
-    "$oid": "6817e7e2f26903ae49a002cb"
+    "$oid": "682f2ec87ea1e235befe6b2f"
   },
   "keeperAdmin": {
     "$oid": "6817b3c3aac703dc65e8001e"
   },
+  "numberRoom": 4,
   "state": true,
   "createdAt": {
-    "$date": "2025-05-05T02:11:18.008Z"
+    "$date": "2025-05-22T14:29:07.077Z"
   },
   "updatedAt": {
-    "$date": "2025-05-05T16:32:09.235Z"
+    "$date": "2025-05-22T15:10:35.981Z"
   }
 },
 {
   "_id": {
-    "$oid": "6818ea80523988f192af2abb"
+    "$oid": "682f34bcd0082dccc6680d91"
   },
-  "typeRoom": "Habitacion familiar",
-  "descriptionRoom": "Habitacion para familias numerosas, con servicio a cuarto",
-  "capacityRoom": 10,
-  "priceRoom": 700,
-  "datesAvialableRoom": [
-    {
-      "date": {
-        "$date": "2025-04-05T06:00:00.000Z"
-      },
-      "availabilityRoom": true,
-      "_id": {
-        "$oid": "6818ea80523988f192af2abc"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-05T00:00:00.000Z"
-      },
-      "availabilityRoom": false,
-      "_id": {
-        "$oid": "6818eab9523988f192af2ad3"
-      },
-      "keeperUser": {
-        "$oid": "6817b8d0139ac92da2e2755e"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-06T00:00:00.000Z"
-      },
-      "availabilityRoom": false,
-      "_id": {
-        "$oid": "6818eabd523988f192af2ad8"
-      },
-      "keeperUser": {
-        "$oid": "6817b8d0139ac92da2e2755e"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-07T00:00:00.000Z"
-      },
-      "availabilityRoom": true,
-      "_id": {
-        "$oid": "6819ab3c18788bb333729886"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-08T00:00:00.000Z"
-      },
-      "availabilityRoom": false,
-      "_id": {
-        "$oid": "6819ab4318788bb33372988d"
-      },
-      "keeperUser": {
-        "$oid": "6817b8d0139ac92da2e2755e"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-09T00:00:00.000Z"
-      },
-      "availabilityRoom": false,
-      "_id": {
-        "$oid": "6819b7c4db248afbbbf9067a"
-      },
-      "keeperUser": {
-        "$oid": "6817b8d0139ac92da2e2755e"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-10T00:00:00.000Z"
-      },
-      "availabilityRoom": false,
-      "_id": {
-        "$oid": "6819b7c8db248afbbbf90683"
-      },
-      "keeperUser": {
-        "$oid": "6817b8d0139ac92da2e2755e"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-11T00:00:00.000Z"
-      },
-      "availabilityRoom": false,
-      "_id": {
-        "$oid": "6819b7cbdb248afbbbf9068d"
-      },
-      "keeperUser": {
-        "$oid": "6817b8d0139ac92da2e2755e"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-12T00:00:00.000Z"
-      },
-      "availabilityRoom": false,
-      "_id": {
-        "$oid": "6819b7cedb248afbbbf90698"
-      },
-      "keeperUser": {
-        "$oid": "6817b8d0139ac92da2e2755e"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-13T00:00:00.000Z"
-      },
-      "availabilityRoom": false,
-      "_id": {
-        "$oid": "6819b7d2db248afbbbf906a4"
-      },
-      "keeperUser": {
-        "$oid": "6817b8d0139ac92da2e2755e"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-14T00:00:00.000Z"
-      },
-      "availabilityRoom": false,
-      "_id": {
-        "$oid": "6819b7d6db248afbbbf906b1"
-      },
-      "keeperUser": {
-        "$oid": "6817b8d0139ac92da2e2755e"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-15T00:00:00.000Z"
-      },
-      "availabilityRoom": true,
-      "_id": {
-        "$oid": "6819b7d9db248afbbbf906bf"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-16T00:00:00.000Z"
-      },
-      "availabilityRoom": true,
-      "_id": {
-        "$oid": "6819b7dcdb248afbbbf906ce"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-17T00:00:00.000Z"
-      },
-      "availabilityRoom": true,
-      "_id": {
-        "$oid": "6819b7dfdb248afbbbf906de"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-18T00:00:00.000Z"
-      },
-      "availabilityRoom": true,
-      "_id": {
-        "$oid": "6819b7e2db248afbbbf906ef"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-19T00:00:00.000Z"
-      },
-      "availabilityRoom": true,
-      "_id": {
-        "$oid": "6819b7e5db248afbbbf90701"
-      }
-    },
-    {
-      "date": {
-        "$date": "2025-05-20T00:00:00.000Z"
-      },
-      "availabilityRoom": true,
-      "_id": {
-        "$oid": "6819b7ebdb248afbbbf90714"
-      }
-    }
-  ],
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
   "keeperHotel": {
     "$oid": "6817e7e2f26903ae49a002cb"
   },
   "keeperAdmin": {
     "$oid": "6817b3c3aac703dc65e8001e"
   },
+  "numberRoom": 2,
   "state": true,
   "createdAt": {
-    "$date": "2025-05-05T16:42:40.589Z"
+    "$date": "2025-05-22T14:29:16.360Z"
   },
   "updatedAt": {
-    "$date": "2025-05-06T08:03:55.721Z"
+    "$date": "2025-05-22T14:29:16.360Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682f34bfd0082dccc6680d9a"
+  },
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "numberRoom": 3,
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-22T14:29:19.157Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T14:29:19.157Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "682f34c3d0082dccc6680da3"
+  },
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "numberRoom": 4,
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-22T14:29:23.039Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-22T14:29:23.039Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6830b364b5a03b23967f90c4"
+  },
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "numberRoom": 5,
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-23T17:41:56.409Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-23T17:41:56.409Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6830b36cb5a03b23967f90d6"
+  },
+  "typeRoom": "Habitacion presidencial",
+  "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+  "capacityRoom": 5,
+  "priceRoom": 1500,
+  "keeperHotel": {
+    "$oid": "6817e7e2f26903ae49a002cb"
+  },
+  "keeperAdmin": {
+    "$oid": "6817b3c3aac703dc65e8001e"
+  },
+  "numberRoom": 6,
+  "state": false,
+  "createdAt": {
+    "$date": "2025-05-23T17:42:04.992Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-23T17:50:51.090Z"
   }
 }]

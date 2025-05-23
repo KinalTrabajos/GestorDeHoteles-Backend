@@ -4,9 +4,9 @@
   },
   "name": "Kevin",
   "surname": "Reyes",
-  "username": "kreyes",
+  "username": "Kreyes",
   "email": "kreyes@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$sBQccflDcRXu2mkaMbtW6Q$V92//L8p8solLVY5uCe4tT7chl2tPxMg2i8d9YJaso8",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$iJYv1/YBoVx6biZeaLU7Qw$ZWCA0mUb1DA1O2MT1yGT1mhN4f2ge4DBaBAQZD5siYg",
   "bookingHistory": [],
   "role": "HOTEL_ADMIN",
   "state": true,
@@ -14,7 +14,7 @@
     "$date": "2025-05-04T18:36:51.798Z"
   },
   "updatedAt": {
-    "$date": "2025-05-04T18:36:51.798Z"
+    "$date": "2025-05-23T17:41:05.670Z"
   }
 },
 {
