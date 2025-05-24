@@ -16,11 +16,7 @@ export const addEventGeneral = async (req, res = response) => {
                 endDate: data.endDate
             },
             keeperHotel: hotel._id,
-            additionalServices: [{
-                typeService: data.typeService,
-                descriptionServices: data.descriptionServices,
-                priceService: data.priceService
-            }],
+            additionalServices: data.additionalServices,
             typeEvent: 'Evento_General',
             state: true
         });
@@ -55,11 +51,7 @@ export const addEventPrivate = async (req, res = response) => {
             nameEvent: data.nameEvent,
             description: data.description,
             keeperHotel: hotel._id,
-            additionalServices: [{
-                typeService: data.typeService,
-                descriptionServices: data.descriptionServices,
-                priceService: data.priceService
-            }],
+            additionalServices: data.additionalServices,
             typeEvent: 'Evento_Privado',
             state: true
         });
@@ -176,11 +168,7 @@ export const updateServicesEvent = async (req, res) => {
             id, 
             {
                 $addToSet: {
-                    additionalServices: [{
-                        typeService: data.typeService,
-                        descriptionServices: data.descriptionServices,
-                        priceService: data.priceService
-                    }]
+                    additionalServices: data.additionalServices,
                 },
                 state: true
             },

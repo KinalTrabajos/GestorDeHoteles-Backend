@@ -13,6 +13,13 @@ import {
     updateServicesEvent
 } from './event.controller.js'
 
+import { 
+    validateUniqueEventName,
+    validateDuplicateEventDates,
+    validateUniqueTypeServices
+}
+from '../middlewares/validar-events.js'
+
 const router = Router();
 
 router.post(
@@ -20,6 +27,9 @@ router.post(
     [
         validarJWT,
         tieneRole('HOTEL_ADMIN'),
+        validateUniqueEventName,
+        validateDuplicateEventDates,
+        validateUniqueTypeServices,
         validarCampos
     ],
     addEventGeneral
@@ -30,6 +40,8 @@ router.post(
     [
         validarJWT,
         tieneRole('HOTEL_ADMIN'),
+        validateUniqueEventName,
+        validateUniqueTypeServices,
         validarCampos
     ],
     addEventPrivate
@@ -71,6 +83,7 @@ router.put(
     [
         validarJWT,
         tieneRole('HOTEL_ADMIN'),
+        validateUniqueTypeServices,
         validarCampos
     ],
     updateServicesEvent

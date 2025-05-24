@@ -6,7 +6,7 @@ import { tieneRole } from "../middlewares/validar-roles.js";
 
 import { addRoom, viewRooms, updateRoom, deleteRoom } from './room.controller.js'
 
-import { validateCapacityAndPriceAndNumberRoom, confirmDeleteRoom } from  '../middlewares/validar-rooms.js';
+import { validateCapacityAndPriceAndNumberRoom, confirmDeleteRoom, validateRoomExists } from  '../middlewares/validar-rooms.js';
 
 const router = Router();
 
@@ -15,6 +15,7 @@ router.post(
     [
         validarJWT,
         tieneRole('HOTEL_ADMIN'),
+        validateRoomExists,
         validateCapacityAndPriceAndNumberRoom,
         validarCampos
     ],
