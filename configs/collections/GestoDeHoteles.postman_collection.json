@@ -428,7 +428,7 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwMjIwNzMsImV4cCI6MTc0ODA0MDA3M30.n3Qvp1c11hBQEeVv99vRqogU18yRXVQbQ1OvA1Oh1DQ",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwOTA0MzMsImV4cCI6MTc0ODEwODQzM30.-4Ai4XG9VknFcG_2cPhdjd0ZPXWmDhlxeso9mRh6QTc",
 								"type": "text"
 							}
 						],
@@ -487,13 +487,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc5MjI0NTcsImV4cCI6MTc0Nzk0MDQ1N30.rgrz8W-F8mk1zf1Vr1CBij8YSWE3jo17h_dFe9zBcKs",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwOTA0MzMsImV4cCI6MTc0ODEwODQzM30.-4Ai4XG9VknFcG_2cPhdjd0ZPXWmDhlxeso9mRh6QTc",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"typeRoom\" : \"Habitacion presidencial\",\r\n    \"descriptionRoom\": \"Habitacion para tener provacidad al maximo, y servicio las 24 horas\",\r\n    \"capacityRoom\" : 5,\r\n    \"priceRoom\" : 1500,\r\n    \"nameHotel\": \"Hotel las tres palmas\",\r\n    \"numberRoom\" : 4\r\n}",
+							"raw": "{\r\n    \"typeRoom\" : \"Habitacion presi\",\r\n    \"descriptionRoom\": \"Habitacion para tener provacidad al maximo, y servicio las 24 horas\",\r\n    \"capacityRoom\" : 5,\r\n    \"priceRoom\" : 1500,\r\n    \"nameHotel\": \"Century Hotel\",\r\n    \"numberRoom\" : 6\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -501,7 +501,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateRoom/682f34b3d0082dccc6680d88",
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/updateRoom/6831be4fd117f0e5b5e25bb7",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -512,7 +512,7 @@
 								"v1",
 								"rooms",
 								"updateRoom",
-								"682f34b3d0082dccc6680d88"
+								"6831be4fd117f0e5b5e25bb7"
 							]
 						}
 					},
@@ -803,13 +803,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc3NTIzMDQsImV4cCI6MTc0Nzc3MDMwNH0.cktKuYIWCbUA7BfomDpT4x_ZxRcqAUqhhGHLnzyjo-8",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgzODAxMjEsImV4cCI6MTc0ODM5ODEyMX0.dwgLBT0_fivMhnjMg0CVxP66ZpyAGE3uYfdFpQ-buVw",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"startDate\": \"2025-05-20T18:30:00Z\",\r\n    \"endDate\": \"2025-05-20T20:00:00Z\"\r\n}",
+							"raw": "{\r\n    \"startDate\": \"2025-06-02T15:30:00Z\",\r\n    \"endDate\": \"2025-06-02T20:00:00Z\",\r\n    \"selectedServicesTypes\" : [\"Bar con meseros\", \"DJ\", \"Servicio de buffete\"]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -817,7 +817,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/addReservationEvent/6829478d4d1512ca74635be3",
+							"raw": "http://localhost:3001/gestorHoteles/v1/reservations/addReservationEvent/68362b549aaf5b1a704458ae",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -828,7 +828,7 @@
 								"v1",
 								"reservations",
 								"addReservationEvent",
-								"6829478d4d1512ca74635be3"
+								"68362b549aaf5b1a704458ae"
 							]
 						}
 					},
@@ -982,13 +982,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc1MjY1MDMsImV4cCI6MTc0NzU0NDUwM30.df63wxwctQjB2D661ZmTDWUd0sfu7KminqDBH-QJX64",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgwOTA0MzMsImV4cCI6MTc0ODEwODQzM30.-4Ai4XG9VknFcG_2cPhdjd0ZPXWmDhlxeso9mRh6QTc",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nameEvent\" : \"Concierto de mana\",\r\n    \"description\" : \"Concierto de mana para maximo de 100 personas\",\r\n    \"startDate\" : \"2025-05-25\",\r\n    \"endDate\" : \"2025-05-26\",\r\n    \"nameHotel\" : \"Century Hotel\",\r\n    \"typeService\" : \"Bar  con meseros\",\r\n    \"descriptionServices\" : \"Un servicio de bar con meseros\",\r\n    \"priceService\" : 50\r\n}",
+							"raw": "{\r\n    \"nameEvent\" : \"Concierto de carlos\",\r\n    \"description\" : \"Concierto de mana para maximo de 100 personas\",\r\n    \"startDate\" : \"2025-05-29\",\r\n    \"endDate\" : \"2025-05-31\",\r\n    \"nameHotel\" : \"Century Hotel\",\r\n    \"additionalServices\": [\r\n        {\r\n          \"typeService\": \"Bar con meseros\",\r\n          \"descriptionServices\": \"Un servicio de bar con meseros\",\r\n          \"priceService\": 50\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1019,13 +1019,13 @@
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc1MjY1MDMsImV4cCI6MTc0NzU0NDUwM30.df63wxwctQjB2D661ZmTDWUd0sfu7KminqDBH-QJX64",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgzODAxMjEsImV4cCI6MTc0ODM5ODEyMX0.dwgLBT0_fivMhnjMg0CVxP66ZpyAGE3uYfdFpQ-buVw",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"nameEvent\" : \"Organizacion de bodas\",\r\n    \"description\" : \"Se organizan bodas en el jardin del hotel, con todoas las comodidades\",\r\n    \"nameHotel\" : \"Century Hotel\",\r\n    \"typeService\" : \"Bar con meseros\",\r\n    \"descriptionServices\" : \"Un servicio de bar con meseros\",\r\n    \"priceService\" : 500\r\n}",
+							"raw": "{\r\n    \"nameEvent\" : \"Organizacion de fiestas\",\r\n    \"description\" : \"Se organizan fiestas en el jardin del hotel, con todoas las comodidades, o en diferentes salones\",\r\n    \"nameHotel\" : \"Century Hotel\",\r\n    \"additionalServices\": [\r\n        {\r\n          \"typeService\": \"Bar con meseros\",\r\n          \"descriptionServices\": \"Un servicio de bar con meseros\",\r\n          \"priceService\": 500\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1200,19 +1200,19 @@
 					"response": []
 				},
 				{
-					"name": "pudateServicesEvent",
+					"name": "updateServicesEvent",
 					"request": {
 						"method": "PUT",
 						"header": [
 							{
 								"key": "x-token",
-								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDc3NTIzMDQsImV4cCI6MTc0Nzc3MDMwNH0.cktKuYIWCbUA7BfomDpT4x_ZxRcqAUqhhGHLnzyjo-8",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2ODE3YjNjM2FhYzcwM2RjNjVlODAwMWUiLCJpYXQiOjE3NDgzODAxMjEsImV4cCI6MTc0ODM5ODEyMX0.dwgLBT0_fivMhnjMg0CVxP66ZpyAGE3uYfdFpQ-buVw",
 								"type": "text"
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"typeService\" : \"Buffete\",\r\n    \"descriptionServices\" : \"Un servicio de buffete ilimitado\",\r\n    \"priceService\" : 7000\r\n}",
+							"raw": "{\r\n    \"additionalServices\": [\r\n        {\r\n          \"typeService\": \"DJ\",\r\n          \"descriptionServices\": \"Uns ervicio de DJ con todo el equipo\",\r\n          \"priceService\": 2000\r\n        }\r\n    ]\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1220,7 +1220,7 @@
 							}
 						},
 						"url": {
-							"raw": "http://localhost:3001/gestorHoteles/v1/events/updateServicesEvent/6829478d4d1512ca74635be3",
+							"raw": "http://localhost:3001/gestorHoteles/v1/events/updateServicesEvent/68362b549aaf5b1a704458ae",
 							"protocol": "http",
 							"host": [
 								"localhost"
@@ -1231,7 +1231,7 @@
 								"v1",
 								"events",
 								"updateServicesEvent",
-								"6829478d4d1512ca74635be3"
+								"68362b549aaf5b1a704458ae"
 							]
 						}
 					},
