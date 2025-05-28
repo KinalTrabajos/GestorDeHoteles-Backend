@@ -27,6 +27,10 @@ const ReservationEventSchema = Schema ({
         enum: ['Pendiente', 'Confirmada', 'Cancelada'],
         default: 'Pendiente'
     },
+    selectedServices: {
+        type: [Object],
+        required: false
+    },
     state: {
         type: Boolean,
         default: true

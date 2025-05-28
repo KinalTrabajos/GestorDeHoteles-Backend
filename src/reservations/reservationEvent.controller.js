@@ -6,7 +6,7 @@ import Event from "../EventsHotels/event.model.js";
 export const addReservationEvent = async (req, res = response) => {
     try {
         const { id } = req.params; // ID del evento
-        const { startDate, endDate } = req.body;
+        const { startDate, endDate, selectedServicesTypes } = req.body;
         const userId = req.usuario._id;
 
         const event = await Event.findById(id);
@@ -30,11 +30,23 @@ export const addReservationEvent = async (req, res = response) => {
             return res.status(409).json({ success: false, msg: 'Event already reserved for selected date range' });
         }
 
+        const selectedServices = event.additionalServices.filter(service =>
+            selectedServicesTypes.includes(service.typeService)
+        );
+
+        if (selectedServices.length !== selectedServicesTypes.length) {
+            return res.status(400).json({
+                success: false,
+                msg: 'One or more services not found in event'
+            });
+        }
+
         const reservationevent = new ReservationEvent({
             keeperUser: userId,
             keeperEvent: id,
             datesReservation: { startDate: start, endDate: end },
             stateReservation: 'Pendiente',
+            selectedServices,
             state: true
         });
 
