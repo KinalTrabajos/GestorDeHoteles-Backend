@@ -39,13 +39,24 @@ export const addRoom = async (req, res = response) => {
 };
 
 export const viewRooms = async (req, res = response) => {
-    const { limite = 100, desde = 0 } = req.query;
+    const { limite = 100, desde = 0, hotelName } = req.query;
     const query = { state: true };
 
     try {
+        if (hotelName) {
+            const hotel = await Hotel.findOne({ nameHotel: hotelName, state: true });
+            if (!hotel) {
+                return res.status(404).json({
+                    success: false,
+                    msg: 'Hotel not found'
+                });
+            }
+            query.keeperHotel = hotel._id;
+        }
+
         const rooms = await Room.find(query)
-            .populate({path: 'keeperHotel', match: {state:true}, select: 'nameHotel'})
-            .populate({path: 'keeperAdmin', match: {state:true}, select: 'name'})
+            .populate({ path: 'keeperHotel', match: { state: true }, select: 'nameHotel' })
+            .populate({ path: 'keeperAdmin', match: { state: true }, select: 'name' })
             .skip(Number(desde))
             .limit(Number(limite));
 
@@ -56,13 +67,13 @@ export const viewRooms = async (req, res = response) => {
             msg: 'Rooms retrieved successfully',
             total,
             rooms
-        })
+        });
     } catch (error) {
         res.status(500).json({
             success: false,
             msg: 'Error retrieving rooms',
             error: error.message
-        })
+        });
     }
 };
 
