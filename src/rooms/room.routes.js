@@ -4,7 +4,7 @@ import { validarCampos } from '../middlewares/validar-campos.js';
 import { validarJWT } from "../middlewares/validar-jwt.js";
 import { tieneRole } from "../middlewares/validar-roles.js";
 
-import { addRoom, viewRooms, updateRoom, deleteRoom } from './room.controller.js'
+import { addRoom, viewRooms, updateRoom, deleteRoom, getRoomsByHotel } from './room.controller.js'
 
 import { validateCapacityAndPriceAndNumberRoom, confirmDeleteRoom, validateRoomExists } from  '../middlewares/validar-rooms.js';
 
@@ -23,6 +23,8 @@ router.post(
 );
 
 router.get("/viewRooms",viewRooms);
+
+router.get("/getRoomsByHotel/:id", getRoomsByHotel);
 
 router.put(
     "/updateRoom/:id",

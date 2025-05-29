@@ -271,6 +271,13 @@
 								"v1",
 								"hotels",
 								"viewHotels"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": null,
+									"disabled": true
+								}
 							]
 						}
 					},
@@ -513,6 +520,36 @@
 								"v1",
 								"rooms",
 								"viewRooms"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ViewRoomsByHotel",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/gestorHoteles/v1/rooms/getRoomsByHotel/682f2ec87ea1e235befe6b2f",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"gestorHoteles",
+								"v1",
+								"rooms",
+								"getRoomsByHotel",
+								"682f2ec87ea1e235befe6b2f"
 							]
 						}
 					},
