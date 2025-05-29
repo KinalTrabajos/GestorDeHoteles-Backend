@@ -3,7 +3,7 @@
     "$oid": "6817e7e2f26903ae49a002cb"
   },
   "nameHotel": "Century Hotel",
-  "hotelAddresss": "10a avenida 09-10, zona 9. Guatemala, Guatemala",
+  "hotelAddresss": "10a avenida 09-10, zona 9. Guatemala",
   "services": [
     {
       "typeService": "Gimnasio",
@@ -61,7 +61,7 @@
     }
   ],
   "keeperCategory": {
-    "$oid": "6817e28959d4223c476b0eec"
+    "$oid": "68379c89adb063068bb1d87f"
   },
   "keeperAdmin": {
     "$oid": "6817b3c3aac703dc65e80020"
@@ -71,7 +71,7 @@
     "$date": "2025-05-04T22:19:14.099Z"
   },
   "updatedAt": {
-    "$date": "2025-05-23T17:42:04.994Z"
+    "$date": "2025-05-29T02:14:08.566Z"
   },
   "keeperEvents": [
     {
@@ -79,6 +79,12 @@
     },
     {
       "$oid": "6829478d4d1512ca74635be3"
+    },
+    {
+      "$oid": "68379d82adb063068bb1d894"
+    },
+    {
+      "$oid": "6837a58a5a845b46a8510816"
     }
   ]
 },
@@ -96,11 +102,19 @@
       "_id": {
         "$oid": "682f2ec87ea1e235befe6b30"
       }
+    },
+    {
+      "typeService": "Sauna",
+      "description": "Es un cuarto de vapor, donde sudas las impurezas de cuerpo",
+      "priceService": 50,
+      "_id": {
+        "$oid": "6837cd1a32780bf149a9952b"
+      }
     }
   ],
   "keeperRooms": [],
   "keeperCategory": {
-    "$oid": "6817e28959d4223c476b0eec"
+    "$oid": "68379c89adb063068bb1d87f"
   },
   "keeperAdmin": {
     "$oid": "6817b3c3aac703dc65e8001e"
@@ -111,7 +125,7 @@
     "$date": "2025-05-22T14:03:52.304Z"
   },
   "updatedAt": {
-    "$date": "2025-05-22T14:03:52.304Z"
+    "$date": "2025-05-29T02:57:30.194Z"
   }
 },
 {
@@ -132,7 +146,7 @@
   ],
   "keeperRooms": [],
   "keeperCategory": {
-    "$oid": "6817e28959d4223c476b0eec"
+    "$oid": "6837b66918ca3c393b2ea958"
   },
   "keeperAdmin": {
     "$oid": "6817b3c3aac703dc65e8001e"
@@ -143,6 +157,6 @@
     "$date": "2025-05-23T17:41:23.008Z"
   },
   "updatedAt": {
-    "$date": "2025-05-23T17:41:23.008Z"
+    "$date": "2025-05-29T02:28:17.368Z"
   }
 }]

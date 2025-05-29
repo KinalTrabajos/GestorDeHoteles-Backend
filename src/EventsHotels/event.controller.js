@@ -18,6 +18,7 @@ export const addEventGeneral = async (req, res = response) => {
             keeperHotel: hotel._id,
             additionalServices: data.additionalServices,
             typeEvent: 'Evento_General',
+            priceEvent: data.priceEvent,
             state: true
         });
 
@@ -53,6 +54,7 @@ export const addEventPrivate = async (req, res = response) => {
             keeperHotel: hotel._id,
             additionalServices: data.additionalServices,
             typeEvent: 'Evento_Privado',
+            priceEvent: data.priceEvent,
             state: true
         });
 

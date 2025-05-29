@@ -75,20 +75,39 @@ export const updateHotel = async (req, res) => {
     try {
         const { id } = req.params;
         const { _id, ...data } = req.body;
+
+        const existingHotel = await Hotel.findById(id);
+
+        const newCategory = await Category.findOne({ typeCategory : data.typeCategory, state: true });
+
+        const oldCategoryId = existingHotel.keeperCategory?.toString();
+        const newCategoryId = newCategory._id.toString();
         
-        const hotel = await Hotel.findByIdAndUpdate (
+        if(oldCategoryId && oldCategoryId !== newCategoryId) {
+            await Category.findByIdAndUpdate(oldCategoryId, {
+                $pull: { keeperHotel: existingHotel._id }
+            });
+
+            await Category.findByIdAndUpdate(newCategoryId, {
+                $push: { keeperHotel: existingHotel._id }
+            });
+        }
+
+        const hotelUpdate = await Hotel.findByIdAndUpdate (
             id, 
             {
                 ...data,
+                keeperCategory: newCategory._id,
                 state: true
             },
             { new: true }
         );
 
+
         res.status(200).json({
             success: true,
             msg: 'Hotel updated successfully',
-            hotel
+            hotelUpdate
         })
     } catch (error) {
         res.status(500).json({
@@ -116,6 +135,36 @@ export const deleteHotel = async (req, res) => {
             msg: 'Error deleting Hotel',
             error: error.message,
         });
+    }
+};
+
+export const addServices = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const { _id, ...data } = req.body;
+
+        const hotel = await Hotel.findByIdAndUpdate(
+            id, 
+            {
+                $addToSet: {
+                    services: data.services,
+                },
+                state: true
+            },
+            { new: true }
+        );
+
+        res.status(200).json({
+            success: true,
+            msg: 'Event updated successfully',
+            hotel
+        })
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            msg: 'Error adding services',
+            error: error.message
+        })
     }
 };
 

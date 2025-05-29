@@ -4,9 +4,20 @@ import { validarCampos } from '../middlewares/validar-campos.js';
 import { validarJWT } from "../middlewares/validar-jwt.js";
 import { tieneRole } from "../middlewares/validar-roles.js";
 
-import { addHotel, viewHotels, updateHotel, deleteHotel } from './hotel.controller.js'
+import { 
+    addHotel, 
+    viewHotels, 
+    updateHotel, 
+    deleteHotel,
+    addServices
+} from './hotel.controller.js'
 
-import { existsHotelName, existsHotelAddress, categoryExists, confirmHotelDeletion} from "../middlewares/validar-hotel.js";
+import { 
+    existsHotelName, 
+    existsHotelAddress, 
+    categoryExists, 
+    confirmHotelDeletion
+} from "../middlewares/validar-hotel.js";
 
 const router = Router();
 
@@ -46,6 +57,17 @@ router.delete(
         validarCampos
     ],
     deleteHotel
+);
+
+router.put(
+    "/addServices/:id",
+    [
+        validarJWT,
+        tieneRole('HOTEL_ADMIN'),
+        check("id", "It is not a valid id").isMongoId(),
+        validarCampos
+    ],
+    addServices
 );
 
 export default router;

@@ -1,6 +1,7 @@
 import { response } from "express";
 import ReservationEvent from './reservationEvent.model.js'; 
 import Event from "../EventsHotels/event.model.js";
+import Invoice from "../invoices/invoices.model.js"
 
 // Crear una nueva reserva para un evento
 export const addReservationEvent = async (req, res = response) => {
@@ -195,7 +196,7 @@ export const confirmReservationEvent = async (req, res = response) => {
     try {
         const { id } = req.params;
         const { ConfirmReservation } = req.body;
-        
+
         if (!ConfirmReservation) {
             return res.status(400).json({
                 success: false,
@@ -203,18 +204,43 @@ export const confirmReservationEvent = async (req, res = response) => {
             });
         }
 
-        await ReservationEvent.findByIdAndUpdate(id, 
-            {
-                stateReservation: 'Confirmada',
-                state: true
-            },
-            { new: true }
-        );
+        // 1. Confirmar reserva
+        const reservation = await ReservationEvent.findByIdAndUpdate(id, {
+            stateReservation: 'Confirmada',
+            state: true
+        }, { new: true }).populate('keeperEvent');
+
+        if (!reservation) {
+            return res.status(404).json({ success: false, msg: 'Reservation not found' });
+        }
+
+        // 2. Calcular total del evento + servicios
+        const event = reservation.keeperEvent;
+
+        let total = 0;
+
+        // Sumar precio base del evento
+        total += event?.priceEvent || 0;
+
+        // Sumar precios de los servicios seleccionados
+        if (reservation.selectedServices && reservation.selectedServices.length > 0) {
+            reservation.selectedServices.forEach(service => {
+                total += service.priceService || 0;
+            });
+        }
+
+        // 3. Crear factura
+        await Invoice.create({
+            reservationPrivate: {
+                ...reservation.toObject(),
+                totalCost: total
+            }
+        });
 
         return res.status(200).json({
             success: true,
-            msg: 'Reservation confirmed',
-            reservation: await ReservationEvent.findById(id)
+            msg: 'Reservation confirmed and invoice created',
+            reservation
         });
 
     } catch (error) {

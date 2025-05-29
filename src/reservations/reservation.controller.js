@@ -1,6 +1,7 @@
 import { response } from "express";
 import Reservation from './reservation.model.js';
 import Room from "../rooms/room.model.js";
+import Invoice from "../invoices/invoices.model.js";
 
 export const addReservation = async (req, res = response) => {
     try {
@@ -237,7 +238,7 @@ export const confirmReservation = async (req, res = response) => {
     try {
         const { id } = req.params;
         const { ConfirmReservation } = req.body;
-        
+
         if (!ConfirmReservation) {
             return res.status(400).json({
                 success: false,
@@ -245,18 +246,31 @@ export const confirmReservation = async (req, res = response) => {
             });
         }
 
-        await Reservation.findByIdAndUpdate(id, 
-            {
-                stateReservation: 'Confirmada',
-                state: true
-            },
-            { new: true }
-        );
+        // 1. Confirmar reserva
+        const reservation = await Reservation.findByIdAndUpdate(id, {
+            stateReservation: 'Confirmada',
+            state: true
+        }, { new: true }).populate('keeperRoom');
+
+        if (!reservation) {
+            return res.status(404).json({ success: false, msg: 'Reservation not found' });
+        }
+
+        const room = reservation.keeperRoom;
+        const total = room?.priceRoom || 0;
+
+        // 2. Crear factura
+        await Invoice.create({
+            reservationPrivate: {
+                ...reservation.toObject(),
+                totalCost: total
+            }
+        });
 
         return res.status(200).json({
             success: true,
-            msg: 'Reservation confirmed',
-            reservation: await Reservation.findById(id)
+            msg: 'Reservation confirmed and invoice created',
+            reservation
         });
 
     } catch (error) {

@@ -24,4 +24,85 @@
   "updatedAt": {
     "$date": "2025-05-22T14:11:26.863Z"
   }
+},
+{
+  "_id": {
+    "$oid": "6837ad290bfce0ffb84c9a75"
+  },
+  "keeperUser": {
+    "$oid": "68379c89adb063068bb1d885"
+  },
+  "keeperRoom": {
+    "$oid": "682f34b3d0082dccc6680d88"
+  },
+  "datesReservation": {
+    "startDate": {
+      "$date": "2025-06-12T10:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2025-06-14T15:00:00.000Z"
+    }
+  },
+  "stateReservation": "Confirmada",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-29T00:41:13.690Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T00:42:05.277Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6837d9538fae572e56540a75"
+  },
+  "keeperUser": {
+    "$oid": "68379c89adb063068bb1d885"
+  },
+  "keeperRoom": {
+    "$oid": "682f34bcd0082dccc6680d91"
+  },
+  "datesReservation": {
+    "startDate": {
+      "$date": "2025-06-15T10:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2025-06-16T15:00:00.000Z"
+    }
+  },
+  "stateReservation": "Confirmada",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-29T03:49:39.957Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T03:50:32.830Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6837d9618fae572e56540a7b"
+  },
+  "keeperUser": {
+    "$oid": "68379c89adb063068bb1d885"
+  },
+  "keeperRoom": {
+    "$oid": "682f34bcd0082dccc6680d91"
+  },
+  "datesReservation": {
+    "startDate": {
+      "$date": "2025-06-17T10:00:00.000Z"
+    },
+    "endDate": {
+      "$date": "2025-06-18T15:00:00.000Z"
+    }
+  },
+  "stateReservation": "Confirmada",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-29T03:49:53.620Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T03:50:53.086Z"
+  }
 }]

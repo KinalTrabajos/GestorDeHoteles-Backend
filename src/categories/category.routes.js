@@ -3,9 +3,19 @@ import { check } from "express-validator";
 import { validarCampos } from '../middlewares/validar-campos.js';
 import { validarJWT } from "../middlewares/validar-jwt.js";
 import { tieneRole } from "../middlewares/validar-roles.js";
-import { existingNameCategory, validateDefaultCategory, confirmAction } from "../middlewares/validar-category.js";
 
-import { addCategory, categoryView, deleteCategory, updateCategory } from './category.controller.js'
+import { 
+    existingNameCategory, 
+    validateDefaultCategory, 
+    confirmAction 
+} from "../middlewares/validar-category.js";
+
+import { 
+    addCategory, 
+    categoryView, 
+    deleteCategory, 
+    updateCategory 
+} from './category.controller.js'
 
 const router = Router();
 

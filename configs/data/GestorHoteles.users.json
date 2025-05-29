@@ -1,39 +1,39 @@
 [{
   "_id": {
-    "$oid": "6817b3c3aac703dc65e8001e"
-  },
-  "name": "Kevin",
-  "surname": "Reyes",
-  "username": "Kreyes",
-  "email": "kreyes@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$iJYv1/YBoVx6biZeaLU7Qw$ZWCA0mUb1DA1O2MT1yGT1mhN4f2ge4DBaBAQZD5siYg",
-  "bookingHistory": [],
-  "role": "HOTEL_ADMIN",
-  "state": true,
-  "createdAt": {
-    "$date": "2025-05-04T18:36:51.798Z"
-  },
-  "updatedAt": {
-    "$date": "2025-05-23T17:41:05.670Z"
-  }
-},
-{
-  "_id": {
-    "$oid": "6817b3c3aac703dc65e80020"
+    "$oid": "68379c89adb063068bb1d883"
   },
   "name": "Jeremy",
   "surname": "Arevalo",
   "username": "jarevalo",
   "email": "jarevalo@gmail.com",
-  "password": "$argon2id$v=19$m=65536,t=3,p=4$4npkGQ2e9+PjHhOWYvZk2w$ia+rjHfkSnV+F+dDg6UuQxsG0mp6nETKxqV/4Gv2e8s",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$aQdYnvztLc9N8jT9Zmu5kQ$XxNT2vYnNtf/cdX6iCBciSPKPDJOxin2bd9adZ4Krho",
   "bookingHistory": [],
   "role": "PLATAFORM_ADMIN",
   "state": true,
   "createdAt": {
-    "$date": "2025-05-04T18:36:51.802Z"
+    "$date": "2025-05-28T23:30:17.507Z"
   },
   "updatedAt": {
-    "$date": "2025-05-04T18:36:51.802Z"
+    "$date": "2025-05-28T23:30:17.507Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "68379c89adb063068bb1d885"
+  },
+  "name": "Kevin",
+  "surname": "Reyes",
+  "username": "kreyes",
+  "email": "kreyes@gmail.com",
+  "password": "$argon2id$v=19$m=65536,t=3,p=4$GSuPQGy7KDVrzrltoP7TWw$JZWS9Kh2tz5NBYaiQmSYfySc9yGcu933hJvtR2g2sd8",
+  "bookingHistory": [],
+  "role": "HOTEL_ADMIN",
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-28T23:30:17.518Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-28T23:30:17.518Z"
   }
 },
 {

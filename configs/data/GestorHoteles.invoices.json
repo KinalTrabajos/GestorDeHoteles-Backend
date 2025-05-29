@@ -1,0 +1,346 @@
+[{
+  "_id": {
+    "$oid": "68379e25adb063068bb1d8b1"
+  },
+  "reservationPrivate": {
+    "datesReservation": {
+      "startDate": {
+        "$date": "2025-06-07T15:30:00.000Z"
+      },
+      "endDate": {
+        "$date": "2025-06-09T20:00:00.000Z"
+      }
+    },
+    "_id": {
+      "$oid": "68379df9adb063068bb1d8a9"
+    },
+    "keeperUser": {
+      "$oid": "68379c89adb063068bb1d885"
+    },
+    "keeperEvent": {
+      "_id": {
+        "$oid": "68379d82adb063068bb1d894"
+      },
+      "nameEvent": "Organizacion de fiestas",
+      "description": "Se organizan fiestas en el jardin del hotel, con todoas las comodidades, o en diferentes salones",
+      "keeperHotel": {
+        "$oid": "6817e7e2f26903ae49a002cb"
+      },
+      "additionalServices": [
+        {
+          "typeService": "Bar con meseros",
+          "descriptionServices": "Un servicio de bar con meseros",
+          "priceService": 500,
+          "_id": {
+            "$oid": "68379d82adb063068bb1d895"
+          }
+        },
+        {
+          "typeService": "DJ",
+          "descriptionServices": "Uns ervicio de DJ con todo el equipo",
+          "priceService": 2000,
+          "_id": {
+            "$oid": "68379da6adb063068bb1d89b"
+          }
+        }
+      ],
+      "typeEvent": "Evento_Privado",
+      "state": true,
+      "createdAt": {
+        "$date": "2025-05-28T23:34:26.226Z"
+      },
+      "updatedAt": {
+        "$date": "2025-05-28T23:35:02.525Z"
+      }
+    },
+    "stateReservation": "Confirmada",
+    "selectedServices": [
+      {
+        "typeService": "Bar con meseros",
+        "descriptionServices": "Un servicio de bar con meseros",
+        "priceService": 500,
+        "_id": {
+          "$oid": "68379d82adb063068bb1d895"
+        }
+      },
+      {
+        "typeService": "DJ",
+        "descriptionServices": "Uns ervicio de DJ con todo el equipo",
+        "priceService": 2000,
+        "_id": {
+          "$oid": "68379da6adb063068bb1d89b"
+        }
+      }
+    ],
+    "state": true,
+    "createdAt": {
+      "$date": "2025-05-28T23:36:25.506Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-28T23:37:09.482Z"
+    },
+    "totalCost": 2500
+  },
+  "createdAt": {
+    "$date": "2025-05-28T23:37:09.490Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-28T23:37:09.490Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6837a6d8c15fd5f66e38f0f2"
+  },
+  "reservationPrivate": {
+    "datesReservation": {
+      "startDate": {
+        "$date": "2025-06-07T15:30:00.000Z"
+      },
+      "endDate": {
+        "$date": "2025-06-09T20:00:00.000Z"
+      }
+    },
+    "_id": {
+      "$oid": "6837a5bb5a845b46a8510821"
+    },
+    "keeperUser": {
+      "$oid": "68379c89adb063068bb1d885"
+    },
+    "keeperEvent": {
+      "_id": {
+        "$oid": "6837a58a5a845b46a8510816"
+      },
+      "nameEvent": "Organizacion de conferencias",
+      "description": "Se organizan conferencias",
+      "keeperHotel": {
+        "$oid": "6817e7e2f26903ae49a002cb"
+      },
+      "additionalServices": [
+        {
+          "typeService": "Buffete",
+          "descriptionServices": "Un servicio de buffete",
+          "priceService": 1500,
+          "_id": {
+            "$oid": "6837a58a5a845b46a8510817"
+          }
+        }
+      ],
+      "typeEvent": "Evento_Privado",
+      "priceEvent": 5000,
+      "state": true,
+      "createdAt": {
+        "$date": "2025-05-29T00:08:42.650Z"
+      },
+      "updatedAt": {
+        "$date": "2025-05-29T00:08:42.650Z"
+      }
+    },
+    "stateReservation": "Confirmada",
+    "selectedServices": [
+      {
+        "typeService": "Buffete",
+        "descriptionServices": "Un servicio de buffete",
+        "priceService": 1500,
+        "_id": {
+          "$oid": "6837a58a5a845b46a8510817"
+        }
+      }
+    ],
+    "state": true,
+    "createdAt": {
+      "$date": "2025-05-29T00:09:31.887Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-29T00:14:15.992Z"
+    },
+    "totalCost": 6500
+  },
+  "state": false,
+  "createdAt": {
+    "$date": "2025-05-29T00:14:16.013Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T00:53:07.353Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6837ad5d00af88406e65e5d9"
+  },
+  "reservationPrivate": {
+    "datesReservation": {
+      "startDate": {
+        "$date": "2025-06-12T10:00:00.000Z"
+      },
+      "endDate": {
+        "$date": "2025-06-14T15:00:00.000Z"
+      }
+    },
+    "_id": {
+      "$oid": "6837ad290bfce0ffb84c9a75"
+    },
+    "keeperUser": {
+      "$oid": "68379c89adb063068bb1d885"
+    },
+    "keeperRoom": {
+      "_id": {
+        "$oid": "682f34b3d0082dccc6680d88"
+      },
+      "typeRoom": "Habitacion presidencial",
+      "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+      "capacityRoom": 5,
+      "priceRoom": 1500,
+      "keeperHotel": {
+        "$oid": "682f2ec87ea1e235befe6b2f"
+      },
+      "keeperAdmin": {
+        "$oid": "6817b3c3aac703dc65e8001e"
+      },
+      "numberRoom": 4,
+      "state": true,
+      "createdAt": {
+        "$date": "2025-05-22T14:29:07.077Z"
+      },
+      "updatedAt": {
+        "$date": "2025-05-22T15:10:35.981Z"
+      }
+    },
+    "stateReservation": "Confirmada",
+    "state": true,
+    "createdAt": {
+      "$date": "2025-05-29T00:41:13.690Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-29T00:42:05.277Z"
+    },
+    "totalCost": 1500
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-29T00:42:05.298Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T00:42:05.298Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6837d9888fae572e56540a85"
+  },
+  "reservationPrivate": {
+    "datesReservation": {
+      "startDate": {
+        "$date": "2025-06-15T10:00:00.000Z"
+      },
+      "endDate": {
+        "$date": "2025-06-16T15:00:00.000Z"
+      }
+    },
+    "_id": {
+      "$oid": "6837d9538fae572e56540a75"
+    },
+    "keeperUser": {
+      "$oid": "68379c89adb063068bb1d885"
+    },
+    "keeperRoom": {
+      "_id": {
+        "$oid": "682f34bcd0082dccc6680d91"
+      },
+      "typeRoom": "Habitacion presidencial",
+      "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+      "capacityRoom": 5,
+      "priceRoom": 1500,
+      "keeperHotel": {
+        "$oid": "6817e7e2f26903ae49a002cb"
+      },
+      "keeperAdmin": {
+        "$oid": "6817b3c3aac703dc65e8001e"
+      },
+      "numberRoom": 2,
+      "state": true,
+      "createdAt": {
+        "$date": "2025-05-22T14:29:16.360Z"
+      },
+      "updatedAt": {
+        "$date": "2025-05-22T14:29:16.360Z"
+      }
+    },
+    "stateReservation": "Confirmada",
+    "state": true,
+    "createdAt": {
+      "$date": "2025-05-29T03:49:39.957Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-29T03:50:32.830Z"
+    },
+    "totalCost": 1500
+  },
+  "state": true,
+  "createdAt": {
+    "$date": "2025-05-29T03:50:32.838Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T03:50:32.838Z"
+  }
+},
+{
+  "_id": {
+    "$oid": "6837d99d8fae572e56540a8b"
+  },
+  "reservationPrivate": {
+    "datesReservation": {
+      "startDate": {
+        "$date": "2025-06-17T10:00:00.000Z"
+      },
+      "endDate": {
+        "$date": "2025-06-18T15:00:00.000Z"
+      }
+    },
+    "_id": {
+      "$oid": "6837d9618fae572e56540a7b"
+    },
+    "keeperUser": {
+      "$oid": "68379c89adb063068bb1d885"
+    },
+    "keeperRoom": {
+      "_id": {
+        "$oid": "682f34bcd0082dccc6680d91"
+      },
+      "typeRoom": "Habitacion presidencial",
+      "descriptionRoom": "Habitacion para tener provacidad al maximo, y servicio las 24 horas",
+      "capacityRoom": 5,
+      "priceRoom": 1500,
+      "keeperHotel": {
+        "$oid": "6817e7e2f26903ae49a002cb"
+      },
+      "keeperAdmin": {
+        "$oid": "6817b3c3aac703dc65e8001e"
+      },
+      "numberRoom": 2,
+      "state": true,
+      "createdAt": {
+        "$date": "2025-05-22T14:29:16.360Z"
+      },
+      "updatedAt": {
+        "$date": "2025-05-22T14:29:16.360Z"
+      }
+    },
+    "stateReservation": "Confirmada",
+    "state": true,
+    "createdAt": {
+      "$date": "2025-05-29T03:49:53.620Z"
+    },
+    "updatedAt": {
+      "$date": "2025-05-29T03:50:53.086Z"
+    },
+    "totalCost": 1500
+  },
+  "state": false,
+  "createdAt": {
+    "$date": "2025-05-29T03:50:53.090Z"
+  },
+  "updatedAt": {
+    "$date": "2025-05-29T04:00:46.180Z"
+  }
+}]
