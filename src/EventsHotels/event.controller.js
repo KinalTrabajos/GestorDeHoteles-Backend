@@ -141,6 +141,7 @@ export const updateEvent = async (req, res = response) => {
                     endDate: data.endDate
                 },
                 typeEvent: data.typeEvent,
+                priceEvent: data.priceEvent,
                 state: true
             },
             { new: true }

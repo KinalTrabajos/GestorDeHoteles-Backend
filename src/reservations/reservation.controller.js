@@ -260,7 +260,7 @@ export const confirmReservation = async (req, res = response) => {
         const total = room?.priceRoom || 0;
 
         // 2. Crear factura
-        await Invoice.create({
+        const invoiceView = await Invoice.create({
             reservationPrivate: {
                 ...reservation.toObject(),
                 totalCost: total
@@ -270,7 +270,8 @@ export const confirmReservation = async (req, res = response) => {
         return res.status(200).json({
             success: true,
             msg: 'Reservation confirmed and invoice created',
-            reservation
+            reservation,
+            invoiceView
         });
 
     } catch (error) {
