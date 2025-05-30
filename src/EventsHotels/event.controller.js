@@ -140,6 +140,7 @@ export const updateEvent = async (req, res = response) => {
                     startDate: data.startDate,
                     endDate: data.endDate
                 },
+                typeEvent: data.typeEvent,
                 state: true
             },
             { new: true }
