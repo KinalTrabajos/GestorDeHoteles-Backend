@@ -52,12 +52,12 @@ export const viewHotels = async (req, res = response) => {
             .populate({path: 'keeperCategory', match: {state:true}, select: 'typeCategory'})
             .populate({path: 'keeperAdmin', match: {state:true}, select: 'name'})
             .populate({path: 'keeperRooms', match: {state:true}, select: 'typeRoom capacityRoom priceRoom datesAvialableRoom'})
-            .populate({ path: 'keeperEvents', match: { state: true }, select: 'nameEvent descriptionEvent' }) 
+            .populate({ path: 'keeperEvents', match: { state: true }, select: 'nameEvent description' }) 
             .skip(Number(desde))
             .limit(Number(limite));
 
         const total = await Hotel.countDocuments(query);
-
+                
         res.status(200).json({
             success: true,
             total,
